@@ -1,0 +1,62 @@
+@import play.api.mvc.RequestHeader
+@(uuid: String)(implicit request: RequestHeader)
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anonymous Chat</title>
+	<link rel='stylesheet'
+	href='@routes.Assets.at("lib/bootstrap/css/bootstrap.min.css")'>
+	<link rel='stylesheet'
+	href='@routes.Assets.at("lib/bootstrap/css/bootstrap-theme.min.css")'>
+	<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+	<script type='text/javascript'
+	src='@routes.Assets.at("lib/jquery/jquery.min.js")'></script>
+	<script type='text/javascript'
+	src='@routes.Assets.at("lib/flot/jquery.flot.js")'></script>
+	<script type='text/javascript'
+	src='@routes.Assets.at("javascripts/index.js")'></script>
+</head>
+
+<!-- En Body se define un atributo data-ws-url,
+en donde se encuentra definido el websocket en el servidor. -->
+
+<body data-ws-url="ws://localhost:9000/ws">
+
+	<!-- Contenedor principal del chat y encabezado -->
+	<!-- Aquí se hará Append a los mensajes de Chat con JavaScript -->
+	<div class="container ">
+		<div class="row">
+			<div class="col-xs-12">
+				<table id="board" class="col-xs-12 table">
+					<thead>
+						<tr>
+							<th class="col-xs-3 text-center">Chat Anónimo</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Mostrar el ID del Usuario y Enviar un mensaje -->
+		<div class="row">
+			<div class="col-xs-3 userid">
+				Anónimo
+			</div>
+			<div class="col-xs-9">
+				<form id="msgform" class="form-horizontal" >
+					<div class="col-xs-8">
+						<input id="msgtext" type="text"  class="form-control"
+						placeholder="Por favor, escribe un mensaje..." />
+					</div>
+					<div class="col-xs-1">
+						<button type="submit" class="btn btn-primary ">Enviar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

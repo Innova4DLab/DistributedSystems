@@ -1,0 +1,167 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script>
+  /*
+  * El siguiente código se ejecuta inmediatamente después
+  * de que se ha cargado el DOM.
+  */
+  $(function() {
+    /*
+    * El siguiente evento remueve del DOM #message al hacer
+    * click en #close
+    */
+    $("#close").click( function(){
+      var elem = document.getElementById("message");
+      elem.parentElement.removeChild(elem);
+    });
+
+    /*
+    * El siguiente evento activa las llamadas a los servicio y despliega la interfaz
+    * al hacer click en el botón "consultar".
+    */
+    $("#button").click( function(){
+      var country = $("#select").val(); //Obtener value de cada <option> en <select>
+      var selectText = $("#select option:selected").text(); //obtener el texto de la opción seleccionada.
+
+      /*
+      * Vaciar el div #app cada vez que se presione el botón.
+      */
+      $("#app").empty();
+
+      /*
+      * Añadir los contenedores de cada sección al div #app
+      */
+      $("#app").append('<h1>Estadísticas para: <u id="title">'+selectText+'</u></h1>'); //Poner el nombre del país de acuerdo al texto de <select>
+      $("#app").append('<div id="extract"></div>');
+      $("#app").append('<div id="clima"  ></div>');
+      $("#app").append('<div id="map"    ></div>');
+      $("#app").append('<div id="images" ></div>');
+
+      /*
+      * Aquí se utiliza la API de google maps para obtener latitud y longitud
+      * basado en una dirección, en este caso el nombre del país.
+      */
+      var geocoder = new google.maps.Geocoder();
+      geocoder.geocode( { 'address': country, 'region': 'world' }, function(results, status) {
+        var longitude = results[0].geometry.location.D;
+        var latitude  = results[0].geometry.location.k;
+        var mapProp = {
+          center: new google.maps.LatLng(latitude,longitude),
+          zoom:6,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        /*
+        * Llamamos al mapa y lo agregamos al div #map
+        */
+        var map = new google.maps.Map(document.getElementById("map"),mapProp);
+      });
+
+      /*
+      * Llamar asíncronamente la API REST de OpenWeather.
+      */
+      $.ajax({
+        type: 'GET',
+        url: 'http://api.openweathermap.org/data/2.5/weather?q='+country,
+        data: { get_param: 'value' },
+        dataType:'json',
+        success: function (data) {
+          var names = data;
+          var max = data.main.temp_max - 273.15;
+          var min = data.main.temp_min - 273.15;
+          var des = data.weather[0].description;
+          /*
+          * Desplegar la vista, agregando componentes en el DOM.
+          */
+          $("#clima").append("<h3>El Clima</h3>");
+          $("#clima").append("<ul>");
+          $("#clima").append("<li>máx. " + max.toFixed(2) + "</li>");
+          $("#clima").append("<li>mín. " + min.toFixed(2) + "</li>");
+          $("#clima").append("<li>" + des + "</li>");
+          $("#clima").append("</ul>");
+        }
+      });
+
+      /*
+      * Llamar asíncronamente la API REST de Flickr.
+      */
+      var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=8682e54c00e1ee915795f57158982fa4&tags="+country+"+city&sort=interestingness-desc";
+      var src;
+      $.getJSON(flickrURL + "&format=json&jsoncallback=?", function(data){
+        $.each(data.photos.photo, function(i,item){
+          src = "http://farm"+ item.farm +".static.flickr.com/"+ item.server +"/"+ item.id +"_"+ item.secret +"_m.jpg";
+          /*
+          * Desplegar la vista, agregando componentes en el DOM.
+          */
+          $("<img/>").attr("src", src).appendTo("#images");
+          if ( i == 3 ) return false;
+        });
+      });
+
+      /*
+      * Llamar asíncronamente la API REST de Wikipedia.
+      */
+      var wikipediaURL = "http://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles="+country;
+      $.ajax({
+        type: 'GET',
+        url: wikipediaURL,
+        data: { get_param: 'value' },
+        dataType:'jsonp',
+        success: function (data) {
+          var data = data.query.pages;
+          var string = data[Object.keys(data)[0]].extract;
+          var output = string.slice(0, string.indexOf("."));
+          /*
+          * Desplegar la vista, agregando componentes en el DOM.
+          */
+          $("#extract").append(output + ".");
+        }
+      });
+
+    }
+  );
+});
+</script>
+</head>
+<body>
+  <div id="message" class="intro">
+    <h1><u style="color: #1abc9c;">Mashup</u>, aplicaciones web híbridas</h1>
+    <p>Esta pequeña aplicación es un <b>Mashup</b>, emplea diversos servicios <b>RESTful</b>
+      para integrarlos en una sola aplicación.</p>
+      Con ésta aplicación aprenderás a:
+      <ul>
+        <li>Llamar servicios Web desde diferentes fuentes de datos</li>
+        <li>Llamar servicios Web utilizando <u>jQuery</u> y <u>Javascript</u></li>
+        <li>Desarrollar una página Web básica con HTML5 y Javascript</li>
+        <li>Implementar una vista simple con Playframework</li>
+      </ul>
+      Servicios utilizados:
+      <ul>
+        <li>Open Weather API</li>
+        <li>Google Maps</li>
+        <li>Flickr API</li>
+      </ul>
+      <div id="close"> [x] <u>Cerrar ventana</u></div>
+    </div>
+    <div class="intro">
+      <h1><u style="color: #1abc9c;">Mashup</u>, Negocios Internacionales</h1>
+      <p width="100px">
+        Nuestra aplicación permite obtener información básica de un país.
+        Para comenzar, selecciona un país de la lista y presiona el botón enviar.
+      </p>
+      <select id="select">
+        <option value="london">Reino Unido</option>
+        <option value="germany">Alemania</option>
+        <option value="austria">Austria</option>
+        <option value="italy">Italia</option>
+      </select>
+      <button id="button" type="button">Consultar</button>
+      <div id="app"></div>
+    </div>
+  </body>
+  </html>

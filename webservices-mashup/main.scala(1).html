@@ -1,0 +1,121 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+/*
+* El siguiente código se ejecuta inmediatamente después
+* de que se ha cargado el DOM.
+*/
+$(function() {
+  /*
+  * Multiplicación, al presionar el botón #multiplicar
+  * se hace una llamada al servicio.
+  */
+  $("#multiplica").click( function(){
+    var num1 = $("#inputm1").val();
+    var num2 = $("#inputm2").val();
+    $("#multiresult").empty(); //Vaciar el área de resultado.
+    if(!isNaN(num1) && !isNaN(num2)) { //Validar los datos de entrada.
+      $.ajax({
+        type: 'GET',
+        url: 'http://localhost:9000/multiplicacion/'+num1+'/'+num2,
+        data: { get_param: 'value' },
+        dataType:'json',
+        success: function (data) {
+          /*
+          * Desplegar en la vista, agregando información al DOM.
+          */
+          $("#multiresult").append(data.resultado);
+        }
+      });
+    }
+  });
+  /*
+  * Palíndromo, al presionar el botón #checapalindromo
+  * se hace una llamada al servicio.
+  */
+  $("#checapalindromo").click( function(){
+    var input = $("#palinput").val();
+    $("#paliresult").empty();
+    $.ajax({
+      type: 'GET',
+      url: 'http://localhost:9000/palindromo/'+input,
+      data: { get_param: 'value' },
+      dataType:'json',
+      success: function (data) {
+        /*
+        * Desplegar en la vista, agregando información al DOM.
+        */
+        if(data.resultado) {
+          $("#paliresult").append("Sí");
+        } else {
+          $("#paliresult").append("No");
+        }
+      }
+    });
+  });
+});
+</script>
+</head>
+<style>
+/*
+ * Definir el estilo del tag Body
+ */
+body{
+  background: #363636;
+  font-family: helvetica, arial;
+  font-size: 13px;
+}
+/*
+ * La clase Box, para nuestra aplicación,
+ * cada caja es un servicio Web implementado en la interfaz.
+ */
+.box {
+  background: #6fbdb5;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #94cbc5;
+  box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75); /* CSS3 */
+  width: 400px;
+  color: #efedbd;
+}
+/*
+ * Cambiamos el estilo del tag h1
+ */
+h1 {
+  font-family: impact;
+  color: #c8d6c0;
+}
+/*
+ * agregamos un margen a todos los botones.
+ */
+button {
+  margin: 8px;
+}
+/*
+ * Los resultados deberían mostrarse sobre la mima línea.
+ * (Intenta quitar ésta propiedad y actualizar la página para ver que pasa).
+ */
+.result{
+  display:inline;
+}
+</style>
+<body>
+  <h1>Multiplicación</h1>
+  <div id="multiplicacion" class="box">
+    Multiplicar:
+    <input id="inputm1" type="number"> x <input id="inputm2" type="number"> =
+    <div id="multiresult" class="result"></div>
+    <button id="multiplica" type="button">Multiplicar</button>
+  </div>
+  <h1>Palíndromo</h1>
+  <div id="palindromo" class="box">
+    ¿Es Palíndromo?
+    <input id="palinput" type="text">
+    <div id="paliresult" class="result"></div>
+    <button id="checapalindromo" type="button">Checar</button>
+  </div>
+</body>
+</html>

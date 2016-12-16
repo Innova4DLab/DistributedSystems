@@ -1,0 +1,60 @@
+
+body {
+  background: #34495e;
+}
+
+.container {
+  color: white;
+  background: #29bb9c;
+  border-radius: 2px;
+  box-shadow: 0px 0px 8px rgba(48,48,48,0.5);
+  padding: 15px;
+  margin: 5px;
+}
+#board {
+  box-shadow: 0px 0px 8px rgba(48,48,48,0.5);
+  border: 1px solid #2c3e4f;
+}
+#board th {
+  background: #2c3e50;
+  border: 0px solid black;
+}
+
+#board td {
+  color: white;
+  padding: 5px;
+  border: 0px solid;
+  margin: 5px;
+}
+
+tr:nth-child(even) {
+  background: #3498db;
+}
+
+tr:nth-child(odd) {
+  background: #2980b9;
+}
+
+.userid {
+  text-align: right;
+  vertical-align: bottom;
+  padding: 7px;
+}
+
+.meta {
+  font-size: 13px;
+  opacity: 0.85;
+  display:inline-block;
+}
+
+.user {
+  opacity: 0.9;
+  color: #c2c2c2;
+  background: #2c3e4f;
+  text-align: right;
+}
+
+.timestamp {
+  font-size: 11px;
+  color: rgba(236, 236, 236, 0.6) !important;
+}
