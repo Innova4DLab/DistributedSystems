@@ -595,12 +595,12 @@ Server found in txt file Antonio 5 times.
 ```
 Nota: Para compilar el código en Mac OSX se emplearan los siguientes comandos:
 ```sh
-$gcc -g -DRPC_SVC_FG -c -o suma_clnt.o suma_clnt.c
-$gcc -g -DRPC_SVC_FG -c -o suma_client.o suma_client.c
-$gcc -g -DRPC_SVC_FG -o suma_client suma_clnt.o suma_client.o
-$gcc -g -DRPC_SVC_FG -c -o suma_svc.o suma_svc.c
-$gcc -g -DRPC_SVC_FG -c -o suma_server.o suma_server.c
-$gcc -g -DRPC_SVC_FG -o suma_server suma_svc.o suma_server.o
+$gcc -g -DRPC_SVC_FG -c -o add_clnt.o add_clnt.c
+$gcc -g -DRPC_SVC_FG -c -o add_client.o add_client.c
+$gcc -g -DRPC_SVC_FG -o add_client add_clnt.o add_client.o
+$gcc -g -DRPC_SVC_FG -c -o add_svc.o add_svc.c
+$gcc -g -DRPC_SVC_FG -c -o add_server.o add_server.c
+$gcc -g -DRPC_SVC_FG -o add_server add_svc.o add_server.o
 ```
 -----
 **Cualquier comentario o duda, pueden discutir en la sección de [issues](https://github.com/Innova4DLab/RPCGen/issues).**
