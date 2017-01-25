@@ -250,7 +250,7 @@ A continuación ejecutamos **Makefile.suma** esto nos compilará todo el código
 $ make -f ./Makefile.suma
 ```
 
-Para el caso de Sistemas Mac OSX se puede compilará empleando los siguientes comandos:
+Para el caso de Sistemas Mac OSX se compilará empleando los siguientes comandos:
 ```sh
 $gcc -g -DRPC_SVC_FG -c -o suma_clnt.o suma_clnt.c
 $gcc -g -DRPC_SVC_FG -c -o suma_client.o suma_client.c
