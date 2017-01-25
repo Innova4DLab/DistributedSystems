@@ -593,5 +593,14 @@ $ ./add_client localhost 2 Antonio
 Server is searching for: Antonio
 Server found in txt file Antonio 5 times.
 ```
+**Para compilar el código en Mac OSX se emplearan los siguientes comandos:
+```sh
+$gcc -g -DRPC_SVC_FG -c -o suma_clnt.o suma_clnt.c
+$gcc -g -DRPC_SVC_FG -c -o suma_client.o suma_client.c
+$gcc -g -DRPC_SVC_FG -o suma_client suma_clnt.o suma_client.o
+$gcc -g -DRPC_SVC_FG -c -o suma_svc.o suma_svc.c
+$gcc -g -DRPC_SVC_FG -c -o suma_server.o suma_server.c
+$gcc -g -DRPC_SVC_FG -o suma_server suma_svc.o suma_server.o
+```
 -----
 **Cualquier comentario o duda, pueden discutir en la sección de [issues](https://github.com/Innova4DLab/RPCGen/issues).**
