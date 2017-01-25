@@ -1,7 +1,7 @@
 # RPCGEN
 Es un pre-compilador generador de interfaces en C desarrollado por Sun. A partir de una especificación se crea código en C que permite inicializar un cliente y servidor.
 >En 1984 Birrell y Nelson introducen una forma novedosa para administrar la comunicación entre un cliente y servidor, con una idea realmente simple. Ellos proponen permitir a los programas llamar procedimientos localizados en otras computadoras, cuando un proceso en una máquina (A) llama a un proceso en una máquina (B) el proceso en (A) es suspendido, la ejecución completa del procedimiento toma lugar en (B). La información es enviada en parámetros y regresa a través del resultado del proceso, ningún tipo de envío de mensajes es visible por el programador. A ésta metodología se le conoce como Remote Procedure Call (RPC).
-
+>En esta práctica usaremos el rpcgen para generar los elementos requeridos del lado del cliente y del servidor para que comuniquen entre sí y desde el cliente se puedan solicitar los servicios del servidor.  En particular, desde el cliente se solicitará la suma de dos enteros y la operación se realizará del lado del servidor.
 # Contenido
 1. **[Antes de comenzar](#antesde)**
   1. [Herramientas Necesarias](#herramientas)
