@@ -540,7 +540,7 @@ Ahora que ya sabemos como trabajar con RPCGen vamos a generar una nueva aplicaci
 
 Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
-Aquí un ejemplo de la definición de dos funciones con RPCGen:
+Aquí un ejemplo de la definición de las dos funciones (add y search) con RPCGen:
 
 ```C
 program BITACORA_PROG {
