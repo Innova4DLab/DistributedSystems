@@ -4,10 +4,11 @@
  * as a guideline for developing your own functions.
  */
 
-#include "add.h"
+#include "bitacora.h"
 #include <time.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 char **
 add_1_svc(char **argp, struct svc_req *rqstp)
@@ -52,7 +53,7 @@ search_1_svc(char **argp, struct svc_req *rqstp)
     return 0;
 	}
  	char buff[1000];
-  char *s;
+  	char *s;
 	//read line by line
 	
 	const size_t line_size = 300;
@@ -70,7 +71,7 @@ search_1_svc(char **argp, struct svc_req *rqstp)
  		}
 	}
 	
-  printf("Registry found: %d times \n", count);
+  	printf("Registry found: %d times \n", count);
 	asprintf(&result, "Server Found, %s %d times", *argp, count);
 	
 	return &result;
