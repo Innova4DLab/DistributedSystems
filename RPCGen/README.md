@@ -553,7 +553,7 @@ program BITACORA_PROG {
 } = 0x23451111;
 ```
 
-<img src="bitacora.png" width="545px" height="218px"/>
+<img src="bitacora.png" width="817px" height="327px"/>
 
 Ejemplo del archivo txt:
 ```txt
