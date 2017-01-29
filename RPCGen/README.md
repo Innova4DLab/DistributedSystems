@@ -552,6 +552,9 @@ program BITACORA_PROG {
   } = 1;
 } = 0x23451111;
 ```
+
+<img src="bitacora.png" width="817px" height="327px"/>
+
 Ejemplo del archivo txt:
 ```txt
 Francisco Tue Feb 10 22:29:09 2015
