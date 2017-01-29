@@ -94,7 +94,7 @@ RPCGEN es un comando que genera código de manera automática:
 ```sh
 $ rpcgen -a -C suma.x
 ```
-<img src="rpcgen.png" width="200px" height="200px"/>
+<img src="rpcgen.png" width="500px" height="500px"/>
 
 La bandera -C (mayúscula C) le dice a **rpcgen** que genere código C bajo la norma ANSI y la bandera -a (minúscula) nos indica que se generarán todos los archivos de código fuente (incluido código de ejemplo). A continuación se detallan las características más importantes de los archivos generados.
 
