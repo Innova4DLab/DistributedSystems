@@ -528,26 +528,26 @@ clean:
 # <a name="activity2"></a>Actividad 2 - Interacción cliente-servidor
 #### <a name="description2"></a>Descripción de la actividad
 Ahora que ya sabemos como trabajar con RPCGen vamos a generar una nueva aplicación, los objetivos son los siguientes:  
-* Generar un nueva especificación RPCGen (Como add.x) en donde se definan dos funciones:
-  * La función "agregar" deberá:
+* Generar un nueva especificación RPCGen (Como bitacora.x) en donde se definan dos funciones:
+  * La función "add" deberá:
     * Recibir un nombre y obtener la fecha con la librería [Date](http://goo.gl/tSrZ46) de C.
     * [Guardar](http://goo.gl/HQeG4H) en un archivo .txt la fecha y el nombre.
     * Retornar un mensaje si los datos se han escrito satisfactoriamente.
-  * La función "buscar" deberá:
+  * La función "search" deberá:
     * Recibir un nombre, mediante una [búsqueda](http://stackoverflow.com/a/13450846/1206078) [obtener](http://stackoverflow.com/a/3501681/1206078) la fecha(s) relacionada(s) al nombre.
     * Retornar la fecha relacionada para el nombre indicado y/o el número de registros con el mismo nombre.
 * Realizar el [paso 6 de la actividad 1](http://goo.gl/Qm2m59), en cuanto a limpieza del código y comentarios.
 
 Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
-Aquí un ejemplo de la definición de dos funciones con RPCGen:
+Aquí un ejemplo de la definición de las dos funciones (add y search) con RPCGen:
 
 ```C
-program ADD_PROG {
-  version ADD_VERS {
+program BITACORA_PROG {
+  version BITACORA_VERS {
     string ADD(string) = 1;
     string SEARCH(string) = 2;
-   } = 1;
+  } = 1;
 } = 0x23451111;
 ```
 Ejemplo del archivo txt:
@@ -567,7 +567,7 @@ Ejemplo de input/output función agregar:
 ```sh
 # En el primer parámetro el número 1 indica la función agregar.
 # En el segundo parámetro se envía el nombre que deseamos guardar.
-$ ./add_client localhost 1 Antonio
+$ ./bitacora_client localhost add Antonio
 # La respuesta del servidor en el cliente sería:
 Server Response: The server added, Antonio Tue Feb 10 22:55:13 2015
 ```
@@ -575,31 +575,31 @@ Ejemplo de input/output función buscar:
 ```sh
 # En el primer parámetro el número 2 indica la función buscar.
 # En el segundo parámetro se indica el nombre que deseamos buscar.
-$ ./add_client localhost 2 Antonio
+$ ./bitacora_client localhost search Antonio
 Server Response: The server found, Antonio 5 times.
 ```
 
 Ejemplos de la respuesta del servidor (agregar):
 
 ```sh
-$ ./add_client localhost 1 Antonio
+$ ./bitacora_client localhost add Antonio
 Server added, Antonio Tue Feb 10 22:55:13 2015
 ```
 Ejemplos de la respuesta del servidor (buscar):
 
 ```sh
-$ ./add_client localhost 2 Antonio
+$ ./bitacora_client localhost search Antonio
 Server is searching for: Antonio
 Server found in txt file Antonio 5 times.
 ```
 Nota: Para compilar el código en Mac OSX se emplearan los siguientes comandos:
 ```sh
-$gcc -g -DRPC_SVC_FG -c -o add_clnt.o add_clnt.c
-$gcc -g -DRPC_SVC_FG -c -o add_client.o add_client.c
-$gcc -g -DRPC_SVC_FG -o add_client add_clnt.o add_client.o
-$gcc -g -DRPC_SVC_FG -c -o add_svc.o add_svc.c
-$gcc -g -DRPC_SVC_FG -c -o add_server.o add_server.c
-$gcc -g -DRPC_SVC_FG -o add_server add_svc.o add_server.o
+$gcc -g -DRPC_SVC_FG -c -o bitacora_clnt.o bitacora_clnt.c
+$gcc -g -DRPC_SVC_FG -c -o bitacora_client.o bitacora_client.c
+$gcc -g -DRPC_SVC_FG -o bitacora_client bitacora_clnt.o bitacora_client.o
+$gcc -g -DRPC_SVC_FG -c -o bitacora_svc.o bitacora_svc.c
+$gcc -g -DRPC_SVC_FG -c -o bitacora_server.o bitacora_server.c
+$gcc -g -DRPC_SVC_FG -o bitacora_server bitacora_svc.o bitacora_server.o
 ```
 -----
 **Cualquier comentario o duda, pueden discutir en la sección de [issues](https://github.com/Innova4DLab/RPCGen/issues).**
