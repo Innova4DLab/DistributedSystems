@@ -545,7 +545,7 @@ Nota: En la parte del cliente, se debe modificar la estructura del main y adecua
 * Realizar el [paso 6 de la actividad 1](http://goo.gl/Qm2m59), en cuanto a limpieza del código y comentarios.
 * Recuerden que cada miembro del grupo debe anotar en el reporte, las lecciones aprendidas para cada actividad realizada. 
 
-### Las indicaciones para la entrega del reporte correspondiente a esta práctica están disponibles en el portal del curso. 
+## Las indicaciones para la entrega del reporte correspondiente a esta práctica están disponibles en el portal del curso. 
 
 Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
