@@ -392,13 +392,13 @@ result = 12
 ```
 ¡El programa funciona completamente, felicidades!
 #### 6. <a name="cleaning"></a>Limpieza
-Ésta es la parte mas importante de la actividad, pues limpiar el código nos permitirá comprender de mejor manera la esctructura del **RPC**.
+Ésta es la parte mas importante de la actividad, pues limpiar el código nos permitirá comprender de mejor manera la estructura del **RPC**.
 
 * Identifica los archivos de cliente y servidor generados por RPCGen, comenta en el código tus observaciones. ¿Los nombres de variables son comprensibles?
 * Identifica la función main. ¿Qué hace? ¿Podrías hacerlo de otra manera? Comenta el código al respecto.
 * ¿Cómo maneja los errores RPCGen? ¿Qué pasa si hay un error y se siguen haciendo llamadas a través de RPC? Comenta en el código en los archivos correspondientes.
 * Elimina todos los comentarios generados por RPCGen que indiquen que los archivos son un template. Agrega al inicio de cada archivo .c tus propios comentarios al respecto.
-* Las líneas con **#ifdef DEBUG** deberían quitarse. ¿Qué puede hacerse para que el código se más legible?
+* Las líneas con **#ifdef DEBUG** deberían quitarse. ¿Qué puede hacerse para que el código sea más legible?
 
 Anota tus comentarios al respecto en el **código** y en tu **reporte**.
 
@@ -542,7 +542,7 @@ Ahora que ya sabemos como trabajar con RPCGen vamos a generar una nueva aplicaci
 
 Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
-Aquí un ejemplo de la definición de las dos funciones (add y search) con RPCGen:
+Aquí un ejemplo de la definición de las dos funciones (add y search) en el archivo bitacora.x:
 
 ```C
 program BITACORA_PROG {
@@ -553,51 +553,39 @@ program BITACORA_PROG {
 } = 0x23451111;
 ```
 
+La siguiente figura muestra donde se solicitan y donde se ejecutan estas funciones:
 <img src="bitacora.png" width="817px" height="327px"/>
 
-Ejemplo del archivo txt:
-```txt
-Francisco Tue Feb 10 22:29:09 2015
-Alejandro Tue Feb 10 22:32:12 2015
-Carlos    Tue Feb 10 22:45:52 2015
-Antonio   Tue Feb 10 22:55:02 2015
-Antonio   Tue Feb 10 22:55:02 2015
-Antonio   Tue Feb 10 22:55:12 2015
-Antonio   Tue Feb 10 22:55:23 2015
-Antonio   Tue Feb 10 22:56:02 2015
-...
-```
 Ejemplo de input/output función agregar:
 
 ```sh
-# En el primer parámetro el número 1 indica la función agregar.
+# En el primer parámetro se indica la función agregar.
 # En el segundo parámetro se envía el nombre que deseamos guardar.
 $ ./bitacora_client localhost add Antonio
 # La respuesta del servidor en el cliente sería:
-Server Response: The server added, Antonio Tue Feb 10 22:55:13 2015
+The server added, Antonio Tue Feb 10 22:55:13 2015
+```
+Ejemplo del archivo txt generado despues de usar la función agregar varias veces 
+```txt
+Francisco Tue Jan 10 22:29:09 2017
+Alejandro Tue Jan 10 22:32:12 2017
+Carlos    Tue Jan 10 22:45:52 2017
+Antonio   Tue Jan 10 22:55:02 2017
+Antonio   Tue Jan 10 22:55:02 2017
+Antonio   Tue Jan 10 22:55:12 2017
+Antonio   Tue Jan 10 22:55:23 2017
+Antonio   Tue Jan 10 22:56:02 2017
+...
 ```
 Ejemplo de input/output función buscar:
 ```sh
-# En el primer parámetro el número 2 indica la función buscar.
+# En el primer parámetro indica la función buscar.
 # En el segundo parámetro se indica el nombre que deseamos buscar.
 $ ./bitacora_client localhost search Antonio
-Server Response: The server found, Antonio 5 times.
+Server found in textfile Antonio 5 times.
 ```
 
-Ejemplos de la respuesta del servidor (agregar):
-
-```sh
-$ ./bitacora_client localhost add Antonio
-Server added, Antonio Tue Feb 10 22:55:13 2015
-```
-Ejemplos de la respuesta del servidor (buscar):
-
-```sh
-$ ./bitacora_client localhost search Antonio
-Server is searching for: Antonio
-Server found in txt file Antonio 5 times.
-```
-Nota: Para compilar el código en Mac OSX se emplearan los siguientes comandos:
+Nota: Para compilar el código en Mac OSX se emplearán los siguientes comandos:
 ```sh
 $gcc -g -DRPC_SVC_FG -c -o bitacora_clnt.o bitacora_clnt.c
 $gcc -g -DRPC_SVC_FG -c -o bitacora_client.o bitacora_client.c
