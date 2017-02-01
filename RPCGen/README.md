@@ -567,14 +567,14 @@ The server added, Antonio Tue Feb 10 22:55:13 2015
 ```
 Ejemplo del archivo txt generado despues de usar la función agregar varias veces 
 ```txt
-Francisco Tue Jan 10 22:29:09 2017
-Alejandro Tue Jan 10 22:32:12 2017
-Carlos    Tue Jan 10 22:45:52 2017
-Antonio   Tue Jan 10 22:55:02 2017
-Antonio   Tue Jan 10 22:55:02 2017
-Antonio   Tue Jan 10 22:55:12 2017
-Antonio   Tue Jan 10 22:55:23 2017
-Antonio   Tue Jan 10 22:56:02 2017
+Francisco Tue Jan 31 22:29:09 2017
+Alejandro Tue Jan 31 22:32:12 2017
+Carlos    Tue Jan 31 22:45:52 2017
+Antonio   Tue Jan 31 22:55:02 2017
+Antonio   Tue Jan 31 22:55:02 2017
+Antonio   Tue Jan 31 22:55:12 2017
+Antonio   Tue Jan 31 22:55:23 2017
+Antonio   Tue Jan 31 22:56:02 2017
 ...
 ```
 Ejemplo de input/output función buscar:
