@@ -547,7 +547,6 @@ Nota: En la parte del cliente, se debe modificar la estructura del main y adecua
 
 #### Las indicaciones para la entrega del reporte correspondiente a esta práctica están disponibles en el portal del curso. 
 
-Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
 Aquí un ejemplo de la definición de las dos funciones (add y search) en el archivo bitacora.x:
 
@@ -559,6 +558,7 @@ program BITACORA_PROG {
   } = 1;
 } = 0x23451111;
 ```
+Después de generar los archivos fuente con el comando RPCGen, los archivos "bitacora_client.c" y "bitacora_server.c" deberan ser reemplazados por los que están en este repositorio (carpeta Actividad2).
 
 La siguiente figura muestra donde se solicitan y donde se ejecutan estas funciones:
 <img src="bitacora.png" width="817px" height="327px"/>
