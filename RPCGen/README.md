@@ -529,7 +529,7 @@ clean:
 
 # <a name="activity2"></a>Actividad 2 - Interacción cliente-servidor
 #### <a name="description2"></a>Descripción de la actividad
-Ahora que ya sabemos como trabajar con RPCGen vamos a generar una nueva aplicación, los objetivos son los siguientes:  
+Ahora que ya sabemos cómo trabajar con RPCGen vamos a generar una nueva aplicación cuyos objetivos son los siguientes:
 * Generar un nueva especificación RPCGen (Como bitacora.x) en donde se definan dos funciones:
   * La función "add" deberá:
     * Recibir un nombre y obtener la fecha con la librería [Date](http://goo.gl/tSrZ46) de C.
@@ -538,7 +538,14 @@ Ahora que ya sabemos como trabajar con RPCGen vamos a generar una nueva aplicaci
   * La función "search" deberá:
     * Recibir un nombre, mediante una [búsqueda](http://stackoverflow.com/a/13450846/1206078) [obtener](http://stackoverflow.com/a/3501681/1206078) la fecha(s) relacionada(s) al nombre.
     * Retornar la fecha relacionada para el nombre indicado y/o el número de registros con el mismo nombre.
+
+Nota: En la parte del cliente, se debe modificar la estructura del main y adecuar el código para solicitar las funciones y enviar los parámetros. En la parte del servidor, se debe incorporar el código que realice las funciones solicitadas.
+
+* Modificar  el código del lado del cliente, adecuándolo para solicitar las funciones “add” y “search”, así como el código en servidor para que realice las funciones solicitadas. 
 * Realizar el [paso 6 de la actividad 1](http://goo.gl/Qm2m59), en cuanto a limpieza del código y comentarios.
+* Recuerden que cada miembro del grupo debe anotar en el reporte, las lecciones aprendidas para cada actividad realizada. 
+* *Las indicaciones para la entrega del reporte correspondiente a esta práctica están disponibles en el portal del curso. 
+
 
 Para la parte del cliente, se debe modificar la estructura del main y adecuar el código para ejecutar las funciones y enviar los parámetros.
 #### <a name="examples2"></a>Ejemplos:
