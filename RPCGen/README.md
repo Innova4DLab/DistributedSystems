@@ -563,7 +563,7 @@ Ejemplo de input/output función agregar:
 # En el segundo parámetro se envía el nombre que deseamos guardar.
 $ ./bitacora_client localhost add Antonio
 # La respuesta del servidor en el cliente sería:
-The server added, Antonio Tue Jan 31 22:55:13 2017
+The server added, Antonio Tue Jan 31 22:55:23 2017
 ```
 Ejemplo del archivo txt generado despues de usar la función agregar varias veces:
 ```txt
