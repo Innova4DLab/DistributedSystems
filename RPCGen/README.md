@@ -551,6 +551,11 @@ Nota: En la parte del cliente, se debe modificar la estructura del main y adecua
 Aquí un ejemplo de la definición de las dos funciones (add y search) en el archivo bitacora.x:
 
 ```C
+struct String {
+  char opt[6];
+  char name[30];
+};
+  
 program BITACORA_PROG {
   version BITACORA_VERS {
     string ADD(string) = 1;
