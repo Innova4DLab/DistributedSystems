@@ -11,7 +11,7 @@ La construcción de una aplicación distribuída con RMI incluye:
 # Contenido
 - **[Antes de comenzar](#antesde)**
   - [Herramientas sugeridas](#herramientas)
-  - [Instalación en Eclipse](#instalacion)
+  - [Instalación en IntelliJ IDEA](#instalacion)
 - **[Actividad 1 - Análisis](#analisis)**
 - **[Actividad 2 - Desarrollo](#desarrollo)**
 - **[Actividad 3 - Limpieza](#limpieza)**
@@ -24,7 +24,7 @@ La construcción de una aplicación distribuída con RMI incluye:
 - Java 1.6 ó superior.
 - Conocimientos intermedios de Programación Orientada a Objetos.
 
-#### <a name="instalacion"></a>Instalación en Eclipse:
+#### <a name="instalacion"></a>Instalación en IntelliJ IDEA:
 1. Clonar el repositorio.
 2. Crear en Intellij Idea un nuevo proyecto (File>New>Project from existing Sources) a partir de la carpeta que ésta dentro de esta practica (Proyecto RMI).
 
