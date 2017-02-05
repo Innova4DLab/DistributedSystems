@@ -20,17 +20,13 @@ La construcción de una aplicación distribuída con RMI incluye:
 # <a name="antesde"></a>Antes de comenzar
 
 #### <a name="herramientas"></a>Herramientas sugeridas:
-- Eclipse
+- IntelliJ IDEA
 - Java 1.6 ó superior.
 - Conocimientos intermedios de Programación Orientada a Objetos.
 
 #### <a name="instalacion"></a>Instalación en Eclipse:
 1. Clonar el repositorio.
-2. Crear en Eclipse crear nuevos proyectos sobre los proyectos clonados del repositorio, de preferencia con el mismo nombre.
-  - Client
-  - Interface
-  - Server  
-3. Agregar el Path: Sobre el proyecto **Server** hacer click derecho y seleccionar "**Build Path > Configure Build Path**", en "**Projects**" seleccionamos agregar y escogemos el proyecto "Interface".
+2. Crear en Intellij Idea un nuevo proyecto (File>New>Project from existing Sources) a partir de la carpeta que ésta dentro de esta practica (Proyecto RMI).
 
 # <a name="analisis"></a>Actividad 1 - Análisis
 
@@ -46,7 +42,7 @@ En **RMI** se definen **Client**, **Server** e **Interface**. La Interfaz define
 
 # <a name="desarrollo"></a>Actividad 2 - Desarrollo
 
-En ésta actividad deberás modificar el **workspace** en Eclipse que se te ha entregado. Como habrás observado el proyecto ejecuta un método Test en el **Server**. El objetivo de ésta actividad es **definir** e **implementar** dos nuevos métodos en el Server que llamaremos desde el Client.
+En ésta actividad deberás modificar el **Proyecto** de Java que se te ha entregado. Como habrás observado el proyecto ejecuta un método Test en el **Server**. El objetivo de ésta actividad es **definir** e **implementar** dos nuevos métodos en el Server que llamaremos desde el Client.
 
 - Crear los siguientes métodos en la Interfaz **"TestRemote"**:
   - El **primer**  método debe recibir dos enteros, realizar una multiplicación y retornar el resultado.
