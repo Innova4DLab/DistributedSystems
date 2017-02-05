@@ -11,24 +11,20 @@ La segunda sesión de RMI consiste en comprender mejor el Marshalling (Serializa
 # Contenido
 - **[Antes de comenzar](#antesde)**
 - [Herramientas sugeridas](#herramientas)
-- [Instalación en Eclipse](#instalacion)
+- [Instalación en IntelliJ IDEA](#instalacion)
 - **[Actividad 1 - Análisis](#analisis)**
 - **[Actividad 2 - Desarrollo](#desarrollo)**
 - **[Actividad 3 - Limpieza](#limpieza)**
 - **[Actividad 4 - Preguntas](#preguntas)**
 
 #### <a name="herramientas"></a>Herramientas sugeridas:
-- Eclipse
+- IntelliJ IDEA
 - Java 1.6 ó superior.
 - Conocimientos intermedios de Programación Orientada a Objetos.
 
-#### <a name="instalacion"></a>Instalación en Eclipse:
+#### <a name="instalacion"></a>Instalación en IntelliJ IDEA:
 1. Clonar el repositorio.
-2. Crear en Eclipse crear nuevos proyectos sobre los proyectos clonados del repositorio, de preferencia con el mismo nombre.
-- Client
-- Interface
-- Server  
-3. Agregar el Path: Sobre el proyecto **Server** hacer click derecho y seleccionar "**Build Path > Configure Build Path**", en "**Projects**" seleccionamos agregar y escogemos el proyecto "Interface".
+2. Crear en Intellij Idea un nuevo proyecto (File>New>Project from existing Sources) a partir de la carpeta RMI-2.
 
 # <a name="analisis"></a>Actividad 1 - Análisis  
 
@@ -54,7 +50,7 @@ Nota: Inicialmente en la consola debería imprimirse un resultado de la siguient
 
 # <a name="desarrollo"></a>Actividad 2 - Desarrollo
 
-En ésta actividad deberás modificar el **workspace** en Eclipse que se te ha entregado. Como habrás analizado las clases **Avion** y **Auto** son objetos que se agregan a una **matriz 4x8** que repesenta una pista aérea, los métodos en el **servidor** permiten informar el desplazamiento de estos vehículos en la **matriz**. Los objetos son creados en el **cliente** y envíados al **servidor** en donde se actualiza su ubiación. El objetivo de ésta actividad es **definir** e **implementar** la lógica de dos nuevos objetos en el **servidor**, que se crearán, enviarán y controlarán desde el **Cliente**.
+En ésta actividad deberás modificar el **Proyecto** de Java que se te ha entregado. Como habrás analizado las clases **Avion** y **Auto** son objetos que se agregan a una **matriz 4x8** que repesenta una pista aérea, los métodos en el **servidor** permiten informar el desplazamiento de estos vehículos en la **matriz**. Los objetos son creados en el **cliente** y envíados al **servidor** en donde se actualiza su ubicación. El objetivo de ésta actividad es **definir** e **implementar** la lógica de dos nuevos objetos en el **servidor**, que se crearán, enviarán y controlarán desde el **Cliente**.
 
 
 - Implementar 2 nuevas clases de vehículos (e.g, UFO, Boeing), para agregarlos a la pista (Matriz 4x8).
@@ -63,7 +59,7 @@ En ésta actividad deberás modificar el **workspace** en Eclipse que se te ha e
 - Implementar en el cliente los vehículos, deben ejecutarse en su propio hilo cada "x" segundos.
 - Documentar las nuevas clases agregadas y los nuevos métodos implementados.
 - Utilizar las guías de JavaDocs.
-- Es importante analizar el código, revisar atentamente el diagrama de clases podría ser útil.
+- Es importante analizar el código, revisar atentamente el diagrama de clases, podría ser útil.
 
 Nota: La consola debería imprimir algo así:
 
