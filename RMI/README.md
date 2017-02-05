@@ -26,7 +26,7 @@ La construcción de una aplicación distribuída con RMI incluye:
 
 #### <a name="instalacion"></a>Instalación en IntelliJ IDEA:
 1. Clonar el repositorio.
-2. Crear en Intellij Idea un nuevo proyecto (File>New>Project from existing Sources) a partir de la carpeta que esta dentro de ésta practica (Proyecto RMI).
+2. Crear en Intellij Idea un nuevo proyecto (File>New>Project from existing Sources) a partir de la carpeta RMI.
 
 # <a name="analisis"></a>Actividad 1 - Análisis
 
