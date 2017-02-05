@@ -65,7 +65,7 @@ Ahora deberás limpiar el código, permitirá comprender de mejor manera la estr
 
 # <a name="preguntas"></a>Actividad 4 - Preguntas
 
-En el reporte ésta práctica, además de mostrar y exlicar el desarrollo de las activiadaes deberás reponder a las siguientes preguntas:
+En el reporte de ésta práctica, además de mostrar y exlicar el desarrollo de las actividades deberás reponder a las siguientes preguntas:
 - ¿Cómo se logra la comunicación entre **Client** y **Server**?
 - ¿Cómo se definen nuevos métodos en **Server**?
 - ¿Cuáles son los pasos necesarios para registrar un nuevo método?
