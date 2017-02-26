@@ -85,7 +85,7 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
 		- 2.- Escribir el comando ipconfig.
 		<img src="Windows-ipconfig.png" width="75%" height="75%"/>
 		
-3. Agregar los dos casos faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Línea 23). 
+3. Agregar los dos casos (case) faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Línea 23). 
 
 4. Ejecutar ClientLauncher en 5 máquinas distintas con los siguientes parámetros.
    - Máquina 1: \<Ip Servidor> 1
