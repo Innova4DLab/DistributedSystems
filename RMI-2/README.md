@@ -72,38 +72,28 @@ Nota: La consola debería imprimir algo así:
 
 A fin de simular un entorno real deberás ejecutar el servidor (Torre de control) y 5 clientes (Auto, Avión, UFO, Boeing, Interfaz Gráfica) en máquinas independientes. Para lograr que la conexión entre cada cliente y el servidor sea exitosa deberas conectar todas las máquinas en una misma red (LAN).
 
-1.-Ejecutar la clase ServerLauncher en una máquina.
+1. Ejecutar la clase ServerLauncher en una máquina.
 
-2.-Obtener la dirección IP de la máquina que ejecute el servidor.
-	Mac OSX y Linux:
-		1.- Abrir una terminal de comandos presionando (CMD + Espacio), escribir terminal y presionar enter.
-		
-		2.- Escribir el comando "ifconfig".
-		
+2. Obtener la dirección IP de la máquina que ejecute el servidor.
+	- Mac OSX y Linux
+		- 1.- Abrir una terminal de comandos presionando (CMD + Espacio), escribir terminal y presionar enter.
+		- 2.- Escribir el comando ifconfig.
 		<img src="Macosx-ifconfig.png" width="75%" height="75%"/>
 		
-	Windows:
-		1.- Abrir una consola de comandos presionando (Windows + R), escribir "cmd" y presionar enter.
-		
-		2.- Escribir el comando "ipconfig"
-		
+	- Windows
+		- 1.- Abrir una consola de comandos presionando (Windows + R), escribir "cmd" y presionar enter.
+		- 2.- Escribir el comando ipconfig.
 		<img src="Windows-ipconfig.png" width="75%" height="75%"/>
 		
-3.-Agregar los dos casos faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Linea 23). 
+3. Agregar los dos casos faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Linea 23). 
 
-4.-Ejecutar ClientLauncher en 5 máquinas distintas con los siguientes parámetros.
-
-   Máquina 1:
-	<Ip Servidor> 1
-   Máquina 2:
-	<Ip Servidor> 2
-   Máquina 3:
-	<Ip Servidor> 3
-   Máquina 4:
-	<Ip Servidor> 4
-   Máquina 5:
-	<Ip Servidor> 5
-
+4. Ejecutar ClientLauncher en 5 máquinas distintas con los siguientes parámetros.
+   - Máquina 1: \<Ip Servidor> 1
+   - Máquina 2: \<Ip Servidor> 2
+   - Máquina 3: \<Ip Servidor> 3
+   - Máquina 4: \<Ip Servidor> 4
+   - Máquina 5: \<Ip Servidor> 5
+   
 Nota: En Intellij Idea se pueden agregar parámetros de ejecución de la siguiente manera:
    Menu Run > Edit Configuration
 
