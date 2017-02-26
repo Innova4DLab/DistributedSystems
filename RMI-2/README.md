@@ -76,7 +76,7 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
 
 2. Obtener la dirección IP de la máquina que ejecute el servidor.
 	- Mac OSX y Linux
-		- 1.- Abrir una terminal de comandos presionando (CMD + Espacio), escribir terminal y presionar enter.
+		- 1.- Abrir una terminal de comandos presionando (CMD + Espacio), escribir "terminal" y presionar enter.
 		- 2.- Escribir el comando ifconfig.
 		<img src="Macosx-ifconfig.png" width="75%" height="75%"/>
 		
@@ -85,7 +85,7 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
 		- 2.- Escribir el comando ipconfig.
 		<img src="Windows-ipconfig.png" width="75%" height="75%"/>
 		
-3. Agregar los dos casos faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Linea 23). 
+3. Agregar los dos casos faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Línea 23). 
 
 4. Ejecutar ClientLauncher en 5 máquinas distintas con los siguientes parámetros.
    - Máquina 1: \<Ip Servidor> 1
