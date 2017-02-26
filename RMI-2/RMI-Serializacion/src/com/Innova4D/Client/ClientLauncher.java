@@ -16,18 +16,48 @@ import com.Innova4D.Interface.RemoteInterface;
 public class ClientLauncher {
 	
 	public static void main(String[] args) throws RemoteException, NotBoundException {
+		if(args.length==2){
+		    Constant.RMI_IP = args[0];//Cambiar la dirección IP que sera empleada para conectarse al servidor RMI
+
+            //Enviar un vehículo específico
+            switch (Integer.parseInt(args[1])){
+                case 1:
+                    System.out.println("Iniciar el cliente para mandar un Avión...");
+                    ClientLauncher.avionClient();
+                    break;
+                case 2:
+                    System.out.println("Iniciar el cliente para mandar un Auto...");
+                    ClientLauncher.autoClient();
+                    break;
+                case 3:
+                    System.out.println("Iniciar el cliente de la interfaz gráfica...");
+                    ClientLauncher.guiClient();
+                    break;
+                    /*
+                case 4:
+                    System.out.println("Iniciar el cliente para mandar un UFO...");
+                    ClientLauncher.ufoClient();
+                    break;
+                case 5:
+                    System.out.println("Iniciar el cliente para mandar un Boeing...");
+                    ClientLauncher.boeingClient();
+                    break;
+                    */
+            }
+		}else {
 		/*
 		 * Iniciar el cliente de la interfaz gráfica.
 		 */
-		ClientLauncher.guiClient();
+            ClientLauncher.guiClient();
 		/*
 		 * Iniciar el cliente para mandar un avión...
 		 */
-		ClientLauncher.avionClient();
+            ClientLauncher.avionClient();
 		/*
 		 * Iniciar el cliente para mandar un auto...
 		 */
-		ClientLauncher.autoClient();
+            ClientLauncher.autoClient();
+        }
 	}
 	/**
 	 * Se crea un cliente que administra el avión.
@@ -38,7 +68,7 @@ public class ClientLauncher {
 		/*
 		 * Buscar el servidor en localhost, en puerto -> Constant.RMI_PORT.
 		 */
-		Registry registry = LocateRegistry.getRegistry("localhost", Constant.RMI_PORT);
+		Registry registry = LocateRegistry.getRegistry(Constant.RMI_IP, Constant.RMI_PORT);
 		final RemoteInterface remote = (RemoteInterface) registry.lookup(Constant.RMI_ID);
 
 		/*
@@ -72,7 +102,7 @@ public class ClientLauncher {
 		/*
 		 * Buscar el servidor en localhost, en puerto -> Constant.RMI_PORT.
 		 */
-		Registry registry = LocateRegistry.getRegistry("localhost", Constant.RMI_PORT);
+		Registry registry = LocateRegistry.getRegistry(Constant.RMI_IP, Constant.RMI_PORT);
 		final RemoteInterface remote = (RemoteInterface) registry.lookup(Constant.RMI_ID);
 
 		/*
@@ -102,7 +132,7 @@ public class ClientLauncher {
 	 * @throws NotBoundException 
 	 */
 	private static void guiClient () throws RemoteException, NotBoundException {
-		Registry registry = LocateRegistry.getRegistry("localhost", Constant.RMI_PORT);
+		Registry registry = LocateRegistry.getRegistry(Constant.RMI_IP, Constant.RMI_PORT);
 		final RemoteInterface remote = (RemoteInterface) registry.lookup(Constant.RMI_ID);
 		/*
 		 * Obtiene la pista y se imprime.
@@ -140,6 +170,7 @@ public class ClientLauncher {
 		    	} else { 
 		    		output = output + "[ ]";
 		    	}
+
 		    }
 		    if (i == 0 ) output = output + "<- Avión";
 		    if (i == 1 ) output = output + "<- Auto ";

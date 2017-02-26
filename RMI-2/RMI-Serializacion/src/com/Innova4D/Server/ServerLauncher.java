@@ -17,7 +17,6 @@ public class ServerLauncher {
 	 * @throws AlreadyBoundException
 	 */
 	public static void main(String[] args) throws AccessException, RemoteException, AlreadyBoundException {
-				
 		ControlTower control = new ControlTower();
 		Registry registry = LocateRegistry.createRegistry(Constant.RMI_PORT);
 		registry.bind(Constant.RMI_ID, control);
