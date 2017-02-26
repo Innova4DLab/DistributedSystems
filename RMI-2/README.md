@@ -77,12 +77,14 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
 2.-Obtener la dirección IP de la máquina que ejecute el servidor.
 	Mac OSX y Linux:
 		1.- Abrir una terminal de comandos presionando (CMD + Espacio), escribir terminal y presionar enter.
+		
 		2.- Escribir el comando "ifconfig".
 		
 		<img src="Macosx-ifconfig.png" width="75%" height="75%"/>
 		
 	Windows:
 		1.- Abrir una consola de comandos presionando (Windows + R), escribir "cmd" y presionar enter.
+		
 		2.- Escribir el comando "ipconfig"
 		
 		<img src="Windows-ipconfig.png" width="75%" height="75%"/>
