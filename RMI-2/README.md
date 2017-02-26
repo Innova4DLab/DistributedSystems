@@ -17,8 +17,9 @@ La segunda sesión de RMI consiste en:
 - [Instalación en IntelliJ IDEA](#instalacion)
 - **[Actividad 1 - Análisis](#analisis)**
 - **[Actividad 2 - Desarrollo](#desarrollo)**
-- **[Actividad 3 - Limpieza](#limpieza)**
-- **[Actividad 4 - Preguntas](#preguntas)**
+- **[Actividad 3 - Prueba del servidor con múltiples clientes](#pruebas)**
+- **[Actividad 4 - Limpieza](#limpieza)**
+- **[Actividad 5 - Preguntas](#preguntas)**
 
 #### <a name="herramientas"></a>Herramientas sugeridas:
 - IntelliJ IDEA
@@ -68,7 +69,7 @@ Nota: La consola debería imprimir algo así:
 
 <img src="t2.png" width="50%" height="50%"/>
 
-# <a name="limpieza"></a>Actividad 3 - Prueba del servidor con múltiples clientes
+# <a name="pruebas"></a>Actividad 3 - Prueba del servidor con múltiples clientes
 
 A fin de simular un entorno real deberás ejecutar el servidor (Torre de control) y 5 clientes (Auto, Avión, UFO, Boeing, Interfaz Gráfica) en máquinas independientes. Para lograr que la conexión entre cada cliente y el servidor sea exitosa deberas conectar todas las máquinas en una misma red (LAN).
 
