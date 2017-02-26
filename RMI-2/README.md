@@ -1,10 +1,10 @@
-# Java RMI Sesión 2 (seralización)
+# Java RMI Sesión 2 (serialización)
 >Java RMI (Remote Method Invocation), es una tecnología desarrollada por Java para invocar métodos remotos. Proporciona un mecanismo simple para la comunicación de servidores y clientes en aplicaciones distribuidas basadas en Java.
 >La construcción de una aplicación distribuída con RMI incluye:  
-1. Serialización (**Marshalling**) de parámetros y objetos en Java en el cliente para enviar al servidor.
-2. Invocación desde el cliente, del **Método Remoto**  (RMI)  a ejecutar en el servidor.
-3. Serialización (**Marshalling**) en el servidor para enviar respuesta al **Cliente**.
-4. Recepción de la respuesta por parte del **Cliente** y ejecución local.  
+- 1. Serialización (**Marshalling**) de parámetros y objetos en Java en el cliente para enviar al servidor.
+- 2. Invocación desde el cliente, del **Método Remoto**  (RMI)  a ejecutar en el servidor.
+- 3. Serialización (**Marshalling**) en el servidor para enviar respuesta al **Cliente**.
+- 4. Recepción de la respuesta por parte del **Cliente** y ejecución local.  
 
 La segunda sesión de RMI consiste en comprender mejor el Marshalling (Serialización de objetos) con RMI, **es muy importante** haber concluído la primera actividad antes de continuar.
 
