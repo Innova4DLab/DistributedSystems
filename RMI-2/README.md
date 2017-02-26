@@ -99,6 +99,7 @@ Nota: En Intellij Idea se pueden agregar parámetros de ejecución de la siguien
 - Menu Run > Edit Configuration
 <img src="IDE-EditConfig.png" width="75%" height="75%"/>
 
+- Escribir los argumentos en "Program arguments"
 <img src="IDE-Param-Ejecution.png" width="75%" height="75%"/> 
 
 Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (Interfaz Gráfica) se actualiza cada vehículo hasta acabar con su recorrido. 
