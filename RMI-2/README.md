@@ -31,7 +31,7 @@ La segunda sesión de RMI consiste en:
 
 # <a name="analisis"></a>Actividad 1 - Análisis  
 
-El presente repositorio contiene un proyecto que **simula la administración de la pista aérea de un Aeropuerto por una torre de control**. Los aviones, ó autos de servicio (**Clientes**) se suscriben a la torre de control (**Servidor**) que contiene un mapa de pista **[Matriz 4x8 Objetos]** en donde los vehículos se desplazan cada "x" segundos; cada vehículo (aéreo o terrestre) informa a la torre de control hacia a dónde se ha desplazado, la torre de control actualiza su **mapa de pista**, el **cliente interfaz de usuario** imprime cada segundo el **mapa aéreo** en la consola.
+El presente repositorio contiene un proyecto que **simula la administración de la pista aérea de un Aeropuerto por una torre de control**. Los aviones, ó autos de servicio (**Clientes**) se suscriben a la torre de control (**Servidor**) que contiene un mapa de pista **[Matríz 4x8 Objetos]** en donde los vehículos se desplazan cada "x" segundos; cada vehículo (aéreo o terrestre) informa a la torre de control hacia a dónde se ha desplazado, la torre de control actualiza su **mapa de pista**, el **cliente interfaz de usuario** imprime cada segundo el **mapa aéreo** en la consola.
 
 - Ejecutar **Server**: Click derecho sobre el proyecto, "**Run As** > **Java Application**".
 - Ejecutar **Client**: Click derecho sobre el proyecto, "**Run As** > **Java Application**".
@@ -53,11 +53,11 @@ Nota: Inicialmente en la consola debería imprimirse un resultado de la siguient
 
 # <a name="desarrollo"></a>Actividad 2 - Desarrollo
 
-En ésta actividad deberás modificar el **Proyecto** de Java que se te ha entregado. Como habrás analizado las clases **Avion** y **Auto** son objetos que se agregan a una **matriz 4x8** que repesenta una pista aérea, los métodos en el **servidor** permiten informar el desplazamiento de estos vehículos en la **matriz**. Los objetos son creados en el **cliente** y envíados al **servidor** en donde se actualiza su ubicación. El objetivo de ésta actividad es **definir** e **implementar** la lógica de dos nuevos objetos en el **servidor**, que se crearán, enviarán y controlarán desde el **Cliente**.
+En ésta actividad deberás modificar el **Proyecto** de Java que se te ha entregado. Como habrás analizado las clases **Avion** y **Auto** son objetos que se agregan a una **matríz 4x8** que repesenta una pista aérea, los métodos en el **servidor** permiten informar el desplazamiento de estos vehículos en la **matríz**. Los objetos son creados en el **cliente** y envíados al **servidor** en donde se actualiza su ubicación. El objetivo de ésta actividad es **definir** e **implementar** la lógica de dos nuevos objetos en el **servidor**, que se crearán, enviarán y controlarán desde el **Cliente**.
 
 
-- Implementar 2 nuevas clases de vehículos (e.g, UFO, Boeing), para agregarlos a la pista (Matriz 4x8).
-- Implementar los **2 nuevos objetos** en los **2 últimos carriles** disponibles de la matriz.
+- Implementar 2 nuevas clases de vehículos (e.g, UFO, Boeing), para agregarlos a la pista (Matríz 4x8).
+- Implementar los **2 nuevos objetos** en los **2 últimos carriles** disponibles de la matríz.
 - Implementar en el servidor la lógica necesaria para las nuevas clases.
 - Implementar en el cliente los vehículos, deben ejecutarse en su propio hilo cada "x" segundos.
 - Documentar las nuevas clases agregadas y los nuevos métodos implementados.
