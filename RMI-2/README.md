@@ -1,4 +1,4 @@
-# Java RMI Sesión 2 (serialización)
+# Java RMI Sesión 2 (serialización y acceso múltiple al servidor)
 >Java RMI (Remote Method Invocation), es una tecnología desarrollada por Java para invocar métodos remotos. Proporciona un mecanismo simple para la comunicación de servidores y clientes en aplicaciones distribuidas basadas en Java.
 >La construcción de una aplicación distribuída con RMI incluye:  
 - 1. Serialización (**Marshalling**) de parámetros y objetos en Java en el cliente para enviar al servidor.
@@ -6,7 +6,10 @@
 - 3. Serialización (**Marshalling**) en el servidor para enviar respuesta al **Cliente**.
 - 4. Recepción de la respuesta por parte del **Cliente** y ejecución local.  
 
-La segunda sesión de RMI consiste en comprender mejor el Marshalling (Serialización de objetos) con RMI, **es muy importante** haber concluído la primera actividad antes de continuar.
+La segunda sesión de RMI consiste en:
+ - comprender mejor el Marshalling (Serialización de objetos) con RMI, y
+ - probar el acceso al servidor desde múltiples clientes 
+ **es muy importante** haber concluído la primera actividad antes de continuar.
 
 # Contenido
 - **[Antes de comenzar](#antesde)**
@@ -65,7 +68,11 @@ Nota: La consola debería imprimir algo así:
 
 <img src="t2.png" width="50%" height="50%"/>
 
-# <a name="limpieza"></a>Actividad 3 - Limpieza
+# <a name="limpieza"></a>Actividad 3 - Prueba del servidor con múltiples clientes
+
+...
+
+# <a name="limpieza"></a>Actividad 4 - Limpieza
 
 Ahora deberás limpiar el código, permitirá comprender de mejor manera la estructura del RMI.
 
@@ -74,7 +81,7 @@ Ahora deberás limpiar el código, permitirá comprender de mejor manera la estr
 - Agrega la documentación a las **variables** y **métodos** de cada **Interfaz/Clase**.
 Nota:  La documentación debe ser siguiendo las guías de [Javadocs](http://en.wikipedia.org/wiki/Javadoc)
 
-# <a name="preguntas"></a>Actividad 4 - Preguntas
+# <a name="preguntas"></a>Actividad 5 - Preguntas
 
 En el reporte de ésta práctica, además de mostrar y explicar el desarrollo de las activiadaes deberás responder a las siguientes preguntas:
 
