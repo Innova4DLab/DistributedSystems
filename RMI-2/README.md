@@ -96,9 +96,10 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
    - Máquina 5: \<Ip Servidor> 5
    
 Nota: En Intellij Idea se pueden agregar parámetros de ejecución de la siguiente manera:
-   Menu Run > Edit Configuration
+- Menu Run > Edit Configuration
+<img src="IDE-EditConfig.png" width="75%" height="75%"/>
 
-   <img src="IDE-Param-Ejecution.png" width="75%" height="75%"/> 
+<img src="IDE-Param-Ejecution.png" width="75%" height="75%"/> 
 
 Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (Interfaz Gráfica) se actualiza cada vehículo hasta acabar con su recorrido. 
 
