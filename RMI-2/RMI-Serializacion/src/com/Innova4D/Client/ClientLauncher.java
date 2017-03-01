@@ -24,23 +24,23 @@ public class ClientLauncher {
                 case 1:
                     System.out.println("Iniciar el cliente para mandar un Avión...");
                     ClientLauncher.avionClient();
+		    ClientLauncher.guiClient();
                     break;
                 case 2:
                     System.out.println("Iniciar el cliente para mandar un Auto...");
                     ClientLauncher.autoClient();
-                    break;
-                case 3:
-                    System.out.println("Iniciar el cliente de la interfaz gráfica...");
-                    ClientLauncher.guiClient();
+	            ClientLauncher.guiClient();
                     break;
                     /*
-                case 4:
+                case 3:
                     System.out.println("Iniciar el cliente para mandar un UFO...");
                     ClientLauncher.ufoClient();
+		    ClientLauncher.guiClient();
                     break;
-                case 5:
+                case 4:
                     System.out.println("Iniciar el cliente para mandar un Boeing...");
                     ClientLauncher.boeingClient();
+		    ClientLauncher.guiClient();
                     break;
                     */
             }
