@@ -104,6 +104,18 @@ Nota: En Intellij Idea se pueden agregar parámetros de ejecución de la siguien
 
 Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (Interfaz Gráfica) se actualiza cada vehículo hasta acabar con su recorrido. 
 
+#### Solucionar problemas de conectividad
+
+Para evitar problemas de conectividad hacia el servidor es preferible desactivar el Firewall del sistema. Para ello puedes seguir los siguientes pasos:
+
+- Escribir "firewall" en el menu inicio y elegir la opción "Comprobar estado del firewall"
+<img src="SFirewall.png" width="75%" height="75%"/> 
+
+- Presionar sobre "Activar o desactivar Firewall de Windows"
+<img src="SFirewall2.png" width="75%" height="75%"/> 
+
+- Desactivar el firewall para redes privadas
+<img src="DisableFirewall.png" width="75%" height="75%"/> 
 
 # <a name="limpieza"></a>Actividad 4 - Limpieza
 
