@@ -108,12 +108,15 @@ Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (
 Para evitar problemas de conectividad hacia el servidor es preferible desactivar el Firewall del sistema. Para ello puedes seguir los siguientes pasos:
 
 - Escribir "firewall" en el menu inicio y elegir la opción "Comprobar estado del firewall"
+
 <img src="SFirewall.png" width="50%" height="50%"/> 
 
 - Presionar sobre "Activar o desactivar Firewall de Windows"
+
 <img src="SFirewall2.png" width="50%" height="50%"/> 
 
 - Desactivar el firewall para redes privadas
+
 <img src="DisableFirewall.png" width="50%" height="50%"/> 
 
 # <a name="limpieza"></a>Actividad 4 - Limpieza
