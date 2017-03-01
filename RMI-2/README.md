@@ -71,7 +71,7 @@ Nota: La consola debería imprimir algo así:
 
 # <a name="pruebas"></a>Actividad 3 - Prueba del servidor con múltiples clientes
 
-A fin de simular un entorno real deberás ejecutar el servidor (Torre de control) y 5 clientes (Auto, Avión, UFO, Boeing, Interfaz Gráfica) en máquinas independientes. Para lograr que la conexión entre cada cliente y el servidor sea exitosa deberas conectar todas las máquinas en una misma red (LAN).
+A fin de simular un entorno real deberás ejecutar el servidor (Torre de control) y 4 clientes (Auto, Avión, UFO, Boeing) en máquinas independientes. Para lograr que la conexión entre cada cliente y el servidor sea exitosa deberas conectar todas las máquinas en una misma red (LAN).
 
 1. Ejecutar la clase ServerLauncher en una máquina.
 
@@ -88,12 +88,11 @@ A fin de simular un entorno real deberás ejecutar el servidor (Torre de control
 		
 3. Agregar los dos casos (case) faltantes correspondientes a los dos nuevos vehículos (UFO, Boeing) dentro de la estructura "Switch" que esta en la clase ClientLauncher.java (Línea 23). 
 
-4. Ejecutar ClientLauncher en 5 máquinas distintas con los siguientes parámetros.
+4. Ejecutar ClientLauncher en 4 máquinas distintas con los siguientes parámetros.
    - Máquina 1: \<Ip Servidor> 1
    - Máquina 2: \<Ip Servidor> 2
    - Máquina 3: \<Ip Servidor> 3
    - Máquina 4: \<Ip Servidor> 4
-   - Máquina 5: \<Ip Servidor> 5
    
 Nota: En Intellij Idea se pueden agregar parámetros de ejecución de la siguiente manera:
 - Menu Run > Edit Configuration
@@ -109,13 +108,13 @@ Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (
 Para evitar problemas de conectividad hacia el servidor es preferible desactivar el Firewall del sistema. Para ello puedes seguir los siguientes pasos:
 
 - Escribir "firewall" en el menu inicio y elegir la opción "Comprobar estado del firewall"
-<img src="SFirewall.png" width="75%" height="75%"/> 
+<img src="SFirewall.png" width="50%" height="50%"/> 
 
 - Presionar sobre "Activar o desactivar Firewall de Windows"
-<img src="SFirewall2.png" width="75%" height="75%"/> 
+<img src="SFirewall2.png" width="50%" height="50%"/> 
 
 - Desactivar el firewall para redes privadas
-<img src="DisableFirewall.png" width="75%" height="75%"/> 
+<img src="DisableFirewall.png" width="50%" height="50%"/> 
 
 # <a name="limpieza"></a>Actividad 4 - Limpieza
 
