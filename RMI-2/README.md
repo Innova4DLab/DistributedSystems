@@ -146,29 +146,29 @@ Pulsaremos sobre “Guardar” y los cambios se guardarán en nuestro dispositiv
 
 Para habilitar un punto de acceso inalámbrico en nuestro dispositivo IOS debemos ir a la pantalla de ajustes.
 
-<img src="images/IOSAP1.png" width="100%" height="100%"/>
+<img src="images/IOSAP1.png" width="50%" height="50%"/>
 
 Elegir compartir internet
 
-<img src="images/IOSAP2.png" width="<100%></100%>" height="100%"/>
+<img src="images/IOSAP2.png" width="50%" height="50%"/>
 
 Activar compartir internet
 
-<img src="images/IOSAP3.png" width="100%" height="100%"/>
+<img src="images/IOSAP3.png" width="50%" height="50%"/>
 
 Si aparece esta pantalla, elegir Activar WI-FI y Bluetooth. 
 Si no aparece esta pantalla, ir al paso siguiente.
 
-<img src="images/IOSAP4.png" width="100%" height="100%"/>
+<img src="images/IOSAP4.png" width="50%" height="50%"/>
 
 Presionar sobre "Contraseña Wi-Fi".
 
-<img src="images/IOSAP5.png" width="100%" height="100%"/>
+<img src="images/IOSAP5.png" width="50%" height="50%"/>
 
 Establecer la contraseña del nuevo punto de acceso inalámbrico.
 Elegir OK.
 
-<img src="images/IOSAP6.png" width="100%" height="100%"/>
+<img src="images/IOSAP6.png" width="50%" height="50%"/>
 
 Al finalizar todos los pasos habra una nueva red inalámbrica disponible para ser accedida desde cualquier dispositivo que tenga soporte de redes inalámbricas. 
 
