@@ -119,7 +119,7 @@ Para evitar problemas de conectividad hacia el servidor es preferible desactivar
 
 <img src="DisableFirewall.png" width="50%" height="50%"/> 
 
-#### Crear un AP Inalámbrico en Android
+#### Crear un punto de acceso Inalámbrico en Android
 
 Para habilitar un punto de acceso inalámbrico en nuestro dispositivo Android debemos abrir el menú de ajustes y fijarnos en el apartado de “conexiones inalámbricas y redes”.
 
