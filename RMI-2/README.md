@@ -119,6 +119,30 @@ Para evitar problemas de conectividad hacia el servidor es preferible desactivar
 
 <img src="DisableFirewall.png" width="50%" height="50%"/> 
 
+#### Crear un AP Inalámbrico
+
+Para habilitar un punto de acceso inalámbrico en nuestro dispositivo Android debemos abrir el menú de ajustes y fijarnos en el apartado de “conexiones inalámbricas y redes”.
+
+<img src="images/AndroidAP1.png" width="50%" height="50%"/> 
+
+Pulsaremos sobre el botón “Más…” para acceder a otra lista de opciones y veremos en nuestra pantalla el siguiente menú:
+
+<img src="images/AndroidAP2.png" width="50%" height="50%"/> 
+
+Aquí debemos pulsar sobre “Anclaje a red y zona Wi-Fi para acceder a la pantalla de configuración del punto de acceso inalámbrico.
+Lo primero que vamos a hacer es configurar una contraseña para nuestra nueva red inalámbrica, para ello pulsaremos sobre la entrada “Configurar zona Wi-Fi” y veremos una ventana similar a la siguiente.
+
+<img src="images/AndroidAP3.png" width="50%" height="50%"/> 
+
+En el apartado del SSID pondremos el nombre con el que queremos identificar nuestra red, por ejemplo, "AndroidAP". En seguridad configuramos el tipo de seguridad que vamos a establecer, por ejemplo, WPA2_PSK (la más segura) y para finalizar en el apartado de contraseña escribiremos la clave de acceso con la que protegeremos nuestro punto de acceso. Una vez configurado la pantalla quedará similar a la siguiente.
+
+<img src="images/AndroidAP4.png" width="50%" height="50%"/> 
+
+Pulsaremos sobre “Guardar” y los cambios se guardarán en nuestro dispositivo. Ya tenemos el punto de acceso configurado, lo único que nos falta es habilitar la entrada “Zona Wi-Fi portátil” y esperar unos segundos a que la conexión se habilite. Una vez listo nos aparecerá una notificación como la siguiente y podremos ver la red Wi-Fi desde cualquier otro dispositivo que soporte red inalámbrica.
+
+<img src="images/AndroidAP5.png" width="50%" height="50%"/> 
+
+
 # <a name="limpieza"></a>Actividad 4 - Limpieza
 
 Ahora deberás limpiar el código, permitirá comprender de mejor manera la estructura del RMI.
