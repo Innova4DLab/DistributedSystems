@@ -119,7 +119,7 @@ Para evitar problemas de conectividad hacia el servidor es preferible desactivar
 
 <img src="DisableFirewall.png" width="50%" height="50%"/> 
 
-#### Crear un AP Inalámbrico
+#### Crear un AP Inalámbrico en Android
 
 Para habilitar un punto de acceso inalámbrico en nuestro dispositivo Android debemos abrir el menú de ajustes y fijarnos en el apartado de “conexiones inalámbricas y redes”.
 
@@ -142,6 +142,35 @@ Pulsaremos sobre “Guardar” y los cambios se guardarán en nuestro dispositiv
 
 <img src="images/AndroidAP5.png" width="50%" height="50%"/> 
 
+#### Crear un AP Inalámbrico en IOS
+
+Para habilitar un punto de acceso inalámbrico en nuestro dispositivo IOS debemos ir a la pantalla de ajustes.
+
+<img src="images/IOSAP1.png" width="100%" height="100%"/>
+
+Elegir compartir internet
+
+<img src="images/IOSAP2.png" width="<100%></100%>" height="100%"/>
+
+Activar compartir internet
+
+<img src="images/IOSAP3.png" width="100%" height="100%"/>
+
+Si aparece esta pantalla, elegir Activar WI-FI y Bluetooth. 
+Si no aparece esta pantalla, ir al paso siguiente.
+
+<img src="images/IOSAP4.png" width="100%" height="100%"/>
+
+Presionar sobre "Contraseña Wi-Fi".
+
+<img src="images/IOSAP5.png" width="100%" height="100%"/>
+
+Establecer la contraseña del nuevo punto de acceso inalámbrico.
+Elegir OK.
+
+<img src="images/IOSAP6.png" width="100%" height="100%"/>
+
+Al finalizar todos los pasos habra una nueva red inalámbrica disponible para ser accedida desde cualquier dispositivo que tenga soporte de redes inalámbricas. 
 
 # <a name="limpieza"></a>Actividad 4 - Limpieza
 
