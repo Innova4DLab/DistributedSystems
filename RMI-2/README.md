@@ -130,9 +130,10 @@ Pulsaremos sobre el botón “Más…” para acceder a otra lista de opciones y
 <img src="images/AndroidAP2.png" width="50%" height="50%"/> 
 
 Aquí debemos pulsar sobre “Anclaje a red y zona Wi-Fi para acceder a la pantalla de configuración del punto de acceso inalámbrico.
-Lo primero que vamos a hacer es configurar una contraseña para nuestra nueva red inalámbrica, para ello pulsaremos sobre la entrada “Configurar zona Wi-Fi” y veremos una ventana similar a la siguiente.
 
 <img src="images/AndroidAP3.png" width="50%" height="50%"/> 
+
+Lo primero que vamos a hacer es configurar una contraseña para nuestra nueva red inalámbrica, para ello pulsaremos sobre la entrada “Configurar zona Wi-Fi”.
 
 En el apartado del SSID pondremos el nombre con el que queremos identificar nuestra red, por ejemplo, "AndroidAP". En seguridad configuramos el tipo de seguridad que vamos a establecer, por ejemplo, WPA2_PSK (la más segura) y para finalizar en el apartado de contraseña escribiremos la clave de acceso con la que protegeremos nuestro punto de acceso. Una vez configurado la pantalla quedará similar a la siguiente.
 
