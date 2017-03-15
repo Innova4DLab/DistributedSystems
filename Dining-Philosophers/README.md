@@ -68,7 +68,7 @@
 
 # <a name="limpieza"></a>Actividad 3 - Limpieza
 
-La actividad está practiamente terminada, sin embargo revisa limpia el código identificando los métodos que haz implementado.
+La actividad está prácticamente terminada, sin embargo revisa y limpia el código identificando los métodos que has implementado.
 
 - **Identificar** los métodos implementados para ambos proyectos.
 - **Eliminar** los bloques de código que digan **"Completar código"**
