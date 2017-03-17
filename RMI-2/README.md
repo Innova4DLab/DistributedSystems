@@ -105,7 +105,7 @@ Al iniciar la ejecución de todos los clientes podrás ver que en el cliente 3 (
 
 #### Solucionar problemas de conectividad
 
-Para evitar problemas de conectividad hacia el servidor es preferible desactivar el Firewall del sistema. Para ello puedes seguir los siguientes pasos:
+Para evitar problemas de conectividad hacia el servidor, en el momento de hacer la prueba con múltiples clientes,  es necesario primero desactivar el Firewall del sistema. Para ello puedes seguir los siguientes pasos:
 
 - Escribir "firewall" en el menu inicio y elegir la opción "Comprobar estado del firewall"
 
@@ -121,7 +121,7 @@ Para evitar problemas de conectividad hacia el servidor es preferible desactivar
 
 #### Crear un punto de acceso Inalámbrico en Android
 
-Para habilitar un punto de acceso inalámbrico en nuestro dispositivo Android debemos abrir el menú de ajustes y fijarnos en el apartado de “conexiones inalámbricas y redes”.
+Para realizar la prueba con múltiples clientes en una red local, es posible habilitar un punto de acceso inalámbrico (AP-Access Point) en nuestro dispositivo Android, para lo cual debemos abrir el menú de ajustes y fijarnos en el apartado de “conexiones inalámbricas y redes”.
 
 <img src="images/AndroidAP1.png" width="50%" height="50%"/> 
 
@@ -135,7 +135,7 @@ Aquí debemos pulsar sobre “Anclaje a red y zona Wi-Fi para acceder a la panta
 
 Lo primero que vamos a hacer es configurar una contraseña para nuestra nueva red inalámbrica, para ello pulsaremos sobre la entrada “Configurar zona Wi-Fi”.
 
-En el apartado del SSID pondremos el nombre con el que queremos identificar nuestra red, por ejemplo, "AndroidAP". En seguridad configuramos el tipo de seguridad que vamos a establecer, por ejemplo, WPA2_PSK (la más segura) y para finalizar en el apartado de contraseña escribiremos la clave de acceso con la que protegeremos nuestro punto de acceso. Una vez configurado la pantalla quedará similar a la siguiente.
+En el apartado del SSID pondremos el nombre con el que queremos identificar nuestra red, por ejemplo, "AndroidAP". En seguridad configuramos el tipo de seguridad que vamos a establecer, por ejemplo, WPA2_PSK (la más segura) y para finalizar en el apartado de contraseña escribiremos la clave de acceso con la que protegeremos nuestro punto de acceso. Una vez configurado el AP, la pantalla quedará similar a la siguiente:
 
 <img src="images/AndroidAP4.png" width="50%" height="50%"/> 
 
@@ -149,11 +149,11 @@ Para habilitar un punto de acceso inalámbrico en nuestro dispositivo IOS debemo
 
 <img src="images/IOSAP1.png" width="40%" height="40%"/>
 
-Elegir compartir internet
+Elegir compartir internet:
 
 <img src="images/IOSAP2.png" width="40%" height="40%"/>
 
-Activar compartir internet
+Activar compartir internet:
 
 <img src="images/IOSAP3.png" width="40%" height="40%"/>
 
@@ -171,7 +171,7 @@ Elegir OK.
 
 <img src="images/IOSAP6.png" width="40%" height="40%"/>
 
-Al finalizar todos los pasos habra una nueva red inalámbrica disponible para ser accedida desde cualquier dispositivo que tenga soporte de redes inalámbricas. 
+Al finalizar todos los pasos habrá una nueva red inalámbrica disponible para ser accedida desde cualquier dispositivo que tenga soporte de redes inalámbricas. 
 
 # <a name="limpieza"></a>Actividad 4 - Limpieza
 
