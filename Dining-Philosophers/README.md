@@ -44,9 +44,9 @@
 
 **Nota importante:** Éste primer ejercicio ilustra el comportamiento de una aplicación que causa un **deadlock**.
 
-Para la representación de los tenedores se emplearon Locks. Un lock controla el acceso de un recurso compartido a multiples hilos y asegura el acceso exclusivo a un solo Thread a la vez. Para esto cada un hilo envia la señal de bloqueo (lock) cuando desea hacer uso del recurso (Tenedor), en caso de estar ocupado por otro hilo este se queda en una cola de espera. Una vez que desocupa el recurso envia una señal de desploqueo (unlock) para liberarlo y permitir que otro hilo lo pueda utilizar (para comer). 
+Para la representación de los tenedores se emplearon locks. Un lock controla el acceso de un recurso compartido a múltiples hilos (threads) y asegura el acceso exclusivo a un solo hilo a la vez. Para esto cada hilo envía la señal de bloqueo (lock) cuando desea hacer uso del recurso (Tenedor). En caso de estar ocupado por otro hilo, el proceso se queda en una cola de espera. Una vez que desocupa el recurso envía una señal de desbloqueo (unlock) para liberarlo y permitir que otro hilo lo pueda utilizar (para comer). 
 
-El uso basico de Lock en Java es el siguiente:
+El uso básico de lock en Java es el siguiente:
 
 Crear lock:
 ```
@@ -66,7 +66,6 @@ nuevoLock.unlock();
 
 # <a name="desarrollo"></a>Actividad 2 - Análisis Dining Philosophers Monitor
 
-
 Ésta actividad consiste en comprender el funcionamiento de un **monitor** para resolver **el problema de los filósofos**. Para esto deberás **completar** el código en la aplicación Java **DiningPhilosophersMonitor**, instrucciones:
 
 - Abrir el proyecto **DiningPhilosophersMonitor**.
@@ -76,9 +75,9 @@ nuevoLock.unlock();
 
 **Nota importante:** Éste segundo ejercicio ilustra el comportamiento de una aplicación que utiliza un **monitor** para evitar un **deadlock**, sin embargo los filósofos aún podrían morir de hambre **(Starvation)**.
 
-Un monitor es una estrategia de sincronización que a diferencia del uso de "Locks", este si garantiza la exclusión mutua.
+Un monitor es una estrategia de sincronización que a diferencia del uso de "Locks", ésta si garantiza la exclusión mutua.
 
-- Es un modulo que encapsula:
+- Es un módulo que encapsula:
   - Estructuras de datos compartidas.
   -	Procedimientos que operan sobre las estructuras de datos compartidas.
   -	Sincronización entre llamadas concurrentes a funciones.
