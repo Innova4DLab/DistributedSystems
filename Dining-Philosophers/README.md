@@ -43,7 +43,8 @@
 - Completar el código faltante.
 
 **Nota importante:** Éste primer ejercicio ilustra el comportamiento de una aplicación que causa un **deadlock**.
-Para la representar los tenedores (Recursos compartidos) se emplearan Locks.
+
+Para la representación de los tenedores (Recursos compartidos) se emplearan Locks.
 Un lock controla el acceso de un recurso compartido por multiples hilos y asegura el acceso exclusivo a un solo Thread a la vez. Esto permite que solo un tenga acceso una vez que envia la señal de blockeo (lock) y cuando lo libera envia una señal de desploqueo (unlock) para que otro hilo lo pueda utilizar (comer). 
 
 **Analiza** el comportamiento si:
