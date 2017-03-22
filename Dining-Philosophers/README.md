@@ -47,6 +47,17 @@
 Para la representación de los tenedores (Recursos compartidos) se emplearan Locks.
 Un lock controla el acceso de un recurso compartido por multiples hilos y asegura el acceso exclusivo a un solo Thread a la vez. Esto permite que solo un tenga acceso una vez que envia la señal de blockeo (lock) y cuando lo libera envia una señal de desploqueo (unlock) para que otro hilo lo pueda utilizar (comer). 
 
+El uso de Lock en Java es el siguiente:
+
+Crear lock:
+Lock nuevoLock = new ReentrantLock();
+
+Bloquear recurso:
+nuevoLock.lock();
+
+Desbloquear recurso:
+nuevoLock.unlock();
+
 **Analiza** el comportamiento si:
 - Ejecutas la aplicación con 1, 2, 3, 4, y 5 filósofos.
 - Es **importante** que anotes tus observaciones de ésta actividad en tu **reporte**.
