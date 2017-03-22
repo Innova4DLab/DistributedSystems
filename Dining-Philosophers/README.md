@@ -52,11 +52,11 @@ Crear lock:
 ```
 Lock nuevoLock = new ReentrantLock();
 ```
-Bloquear recurso:
+Bloquear recurso (Envio de la señal de bloqueo):
 ```
 nuevoLock.lock();
 ```
-Desbloquear recurso:
+Desbloquear recurso (Envio de la señal de desbloqueo):
 ```
 nuevoLock.unlock();
 ```
