@@ -45,7 +45,7 @@
 **Nota importante:** Éste primer ejercicio ilustra el comportamiento de una aplicación que causa un **deadlock**.
 
 Para la representación de los tenedores (Recursos compartidos) se emplearan Locks.
-Un lock controla el acceso de un recurso compartido por multiples hilos y asegura el acceso exclusivo a un solo Thread a la vez. Esto permite que solo un tenga acceso una vez que envia la señal de blockeo (lock) y cuando lo libera envia una señal de desploqueo (unlock) para que otro hilo lo pueda utilizar (comer). 
+Un lock controla el acceso de un recurso compartido por multiples hilos y asegura el acceso exclusivo a un solo Thread a la vez. Esto permite que solo un hilo tenga acceso una vez que es envia la señal de blockeo (lock) y envia una señal de desploqueo (unlock) cuando deja de utilizar el recurso, esto para liberarlo y permitir que que otro hilo lo pueda utilizar (comer). 
 
 El uso basico de Lock en Java es el siguiente:
 
