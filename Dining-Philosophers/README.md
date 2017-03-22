@@ -25,7 +25,7 @@
 # Antes de comenzar
 
 #### <a name="herramientas"></a>Herramientas sugeridas:
-- Eclipse,IntelliJ u otro.
+- Eclipse,IntelliJ u otro entorno de desarrollo.
 - Java 1.7 ó superior.
 - Conocimientos intermedios de **Programación Orientada a Objetos**.
 
