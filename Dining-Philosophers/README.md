@@ -60,6 +60,9 @@ Desbloquear recurso (Envio de la señal de desbloqueo):
 ```
 nuevoLock.unlock();
 ```
+**Para más información acerca de Lock visitar la [documentación oficial](https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/locks/Lock.html).**
+
+
 **Analiza** el comportamiento si:
 - Ejecutas la aplicación con 1, 2, 3, 4, y 5 filósofos.
 - Es **importante** que anotes tus observaciones de ésta actividad en tu **reporte**.
@@ -84,6 +87,8 @@ Un monitor es una estrategia de sincronización que a diferencia del uso de "Loc
 - Garantiza la exclusión mutua.
 - Proporciona un mecanismo para que los hilos esperen por un evento y esto se logra en Java mediante el uso de "Wait()".
 - Proporciona un mecanismo para notificar a los hilos que se ha desencadenado un evento "Notify()".
+
+**Para más información acerca de Monitores visitar la [documentación oficial](https://docs.oracle.com/javase/tutorial/essential/concurrency/sync.html).**
 
 
 **Analiza** el comportamiento si:
