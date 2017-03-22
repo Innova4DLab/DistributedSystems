@@ -64,7 +64,7 @@ nuevoLock.unlock();
 - Ejecutas la aplicación con 1, 2, 3, 4, y 5 filósofos.
 - Es **importante** que anotes tus observaciones de ésta actividad en tu **reporte**.
 
-# <a name="desarrollo"></a>Actividad 2 - Análisis Dining Philosophers Monitor
+# <a name="desarrollo"></a>Actividad 2 - Análisis Dining Philosophers Monitor
 
 Ésta actividad consiste en comprender el funcionamiento de un **monitor** para resolver **el problema de los filósofos**. Para esto deberás **completar** el código en la aplicación Java **DiningPhilosophersMonitor**, instrucciones:
 
@@ -92,7 +92,7 @@ Un monitor es una estrategia de sincronización que a diferencia del uso de "Loc
 - En el código se omite el uso de **Synchronized en los métodos**.
 - Es **importante** que anotes tus observaciones de ésta actividad en tu **reporte**.
 
-# <a name="limpieza"></a>Actividad 3 - Limpieza
+# <a name="limpieza"></a>Actividad 3 - Limpieza
 
 La actividad está prácticamente terminada, sin embargo revisa y limpia el código identificando los métodos que has implementado.
 
@@ -101,7 +101,7 @@ La actividad está prácticamente terminada, sin embargo revisa y limpia el cód
 - **Modificar** la documentación al inicio de cada clase con tus datos personales.
 - Recordando que la documentación debe ser siguiendo las guías de [Javadocs](http://en.wikipedia.org/wiki/Javadoc)
 
-# <a name="preguntas"></a>Actividad 4 - Preguntas
+# <a name="preguntas"></a>Actividad 4 - Preguntas
 
 En el reporte de ésta práctica, además de mostrar y explicar el desarrollo de las actividades deberás responder a las siguientes preguntas:
 
