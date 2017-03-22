@@ -76,6 +76,17 @@ nuevoLock.unlock();
 
 **Nota importante:** Éste segundo ejercicio ilustra el comportamiento de una aplicación que utiliza un **monitor** para evitar un **deadlock**, sin embargo los filósofos aún podrían morir de hambre **(Starvation)**.
 
+Un monitor es una estrategia de sincronización que a diferencia del uso de "Locks", este si garantiza la exclusión mutua.
+
+- Es un modulo que encapsula:
+  - Estructuras de datos compartidas.
+  -	Procedimientos que operan sobre las estructuras de datos compartidas.
+  -	Sincronización entre llamadas concurrentes a funciones.
+- Garantiza la exclusión mutua.
+- Proporciona un mecanismo para que los hilos esperen por un evento y esto se logra en Java mediante el uso de "Wait()".
+- Proporciona un mecanismo para notificar a los hilos que se ha desencadenado un evento "Notify()".
+
+
 **Analiza** el comportamiento si:
 - Ejecutas la aplicación con 1, 2, 3, 4, y 5 **filósofos**.
 - Ejecutas la aplicación con 3, 5 ó 7 **tenedores**.
