@@ -44,6 +44,18 @@ Windows:
 - Ejectuar el archivo **.bat**
 - Agregar activator a la variable **Path**.
 
+### Agregar el directorio de TypeSafe a la variable de entorno:
+
+Abrir una linea de comandos como administrador.
+- 1.-Presionar la tecla windows.
+- 2.-Escribir "cmd"
+- 3.-Presionar click derecho sobre el icono de consola.
+- 4.-Seleccionar "ejecutar como administrador".
+IMG 
+
+Ejecutar el siguiente comando (con la ruta de Typesafe):
+- setx PATH "%PATH%;\<Ruta al directorio de TypeSafe\>"
+
 # <a name="analisis"></a>Actividad 1 - Tutorial de Servicios Web
 
 La instalación ya nos permite ejecutar el comando **activator** en la consola:
