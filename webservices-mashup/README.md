@@ -40,6 +40,10 @@ $ activator run
   - Para nuestra aplicación, las llamadas a los **servicios Web** las implementaremos del lado del **cliente**, utilizando llamadas asíncronas, por lo que nuestras actividades se centraran bajo **HTML, CSS y JavaScript**.
 - **Copiar** el contenido del archivo en *este repositorio* **index.scala(1).html** archivo del proyecto de **Play** dentro de la ruta **app/views/index.scala.html**.  
 
+- **Modificar** el contenido del método "index()" que esta en controlador "Application.java" por la línea:
+
+	  return ok(index.render("Servicios Web"));
+    
 - **Abrir** el navegador y escribir **localhost:9000** en la barra de direcciones.
 
 ### Explicación:
