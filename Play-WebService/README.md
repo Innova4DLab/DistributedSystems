@@ -55,7 +55,7 @@ Abrir una linea de comandos como administrador.
 <img src="imagenes/cmd-console.png" width="75%" height="75%">
 
 Ejecutar el siguiente comando (con la ruta de Typesafe):
-- setx PATH "%PATH%;\<Ruta al directorio de TypeSafe\>"
+- setx PATH "%PATH%;\<Ruta al directorio de TypeSafe/bin\>"
 
 # <a name="analisis"></a>Actividad 1 - Tutorial de Servicios Web
 
