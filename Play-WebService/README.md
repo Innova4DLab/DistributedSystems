@@ -41,12 +41,12 @@ $ brew install typesafe-activator
 
 Windows:
 - Descargar el instalador de Play <a href="https://www.playframework.com/">aquí</a>.
-- Ejectuar el archivo **.bat**
+- Ejecutar el archivo **.bat**
 - Agregar activator a la variable **Path**.
 
 ### Agregar el directorio de TypeSafe a la variable de entorno:
 
-Abrir una linea de comandos como administrador.
+Abrir una línea de comandos como administrador.
 - 1.-Presionar la tecla windows.
 - 2.-Escribir "cmd"
 - 3.-Presionar click derecho sobre el icono de consola.
