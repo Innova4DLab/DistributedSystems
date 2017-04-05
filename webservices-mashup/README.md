@@ -116,7 +116,7 @@ En esta actividad vamos a **separar asuntos**, es decir, vamos a utilizar **CSS*
 
 ### Actividad:
 
-En el documento **main.scala(2).html** de este repositorio se encuentra un Mashup en donde se han implementado algunos **servicios Web** desarrollados por terceros, **Google**, **Flickr**, **OpenWeather**, etc. El objetivo de la práctica es integrar los  servicios Web que ya desarrollaste en esta aplicación:
+En el documento **index.scala(2).html** de este repositorio se encuentra un Mashup en donde se han implementado algunos **servicios Web** desarrollados por terceros, **Google**, **Flickr**, **OpenWeather**, etc. El objetivo de la práctica es integrar los  servicios Web que ya desarrollaste en esta aplicación:
 
   - Utilizando **los servicios Web** previamente desarrollados en la actividad anterior, la nueva aplicación deberá:
     - **Mostrar** la capital al lado del país.
