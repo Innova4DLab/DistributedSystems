@@ -52,7 +52,7 @@ Abrir una linea de comandos como administrador.
 - 3.-Presionar click derecho sobre el icono de consola.
 - 4.-Seleccionar "ejecutar como administrador".
 
-<img src="imagenes/cmd.png" width="75%" height="75%">
+<img src="imagenes/cmd-console.png" width="75%" height="75%">
 
 Ejecutar el siguiente comando (con la ruta de Typesafe):
 - setx PATH "%PATH%;\<Ruta al directorio de TypeSafe\>"
