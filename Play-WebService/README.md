@@ -50,7 +50,7 @@ Abrir una linea de comandos como administrador.
 - 1.-Presionar la tecla windows.
 - 2.-Escribir "cmd"
 - 3.-Presionar click derecho sobre el icono de consola.
-- 4.-Seleccionar "ejecutar como administrador".
+- 4.-Seleccionar "Ejecutar como administrador".
 
 <img src="imagenes/cmd-console.png" width="75%" height="75%">
 
