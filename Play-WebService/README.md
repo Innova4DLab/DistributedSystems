@@ -193,7 +193,7 @@ public static Result getPalindromo(String word){
 - Dado el método **palíndromo** define el **enrutamiento** adecuado para crear un **servicio Web**.
 - **Analizar** y **describir** el procedimiento en el **reporte**.
 
-# <a name="desarrollo"></a>Actividad 2 - Implementación de Servicios Web
+# <a name="desarrollo"></a>Actividad 2 - Implementación de Servicios Web
 
 Una vez completado el tuturial es momento de poner en práctica el aprendizaje, como objetivo deberás realizar la implementación de algunos servicios **RESTful**. Cada servicio contiene una entrada y una salida, la salida debe ser en formato **JSON** como se realizó en el tutorial.
 
@@ -203,13 +203,13 @@ Una vez completado el tuturial es momento de poner en práctica el aprendizaje, 
 - Desarrollar un **Servicio Web** que dado un **País Europeo**, regrese la **ubicación de la embajada de México**.
   - <a href="https://docs.google.com/spreadsheets/d/15z65g2wvjrj6Q-7S4oRhCNBbJhZuaT2SaVBtb2w822M/edit#gid=0">Lista</a> con ubicaciones de las **embajadas mexicanas** en **Europa**.
 
-# <a name="limpieza"></a> Actividad 3 - Limpieza
+# <a name="limpieza"></a> Actividad 3 - Limpieza
 
 Para comprender mejor las actividades recuerda **limpiar** y **documentar** correctamente el código. Por ejemplo, es importante afinar algunos detalles como escribir los nombres de variables y métodos de manera clara, es decir, nombres que representen e indiquen  explícitamente su **funcionalidad**. **Play Framework** utiliza Java, por lo tanto es muy fácil realizar la documentación mediante [Javadocs](http://en.wikipedia.org/wiki/Javadoc).
 
 - Recordando que la documentación debe ser siguiendo las guías de [Javadocs](http://en.wikipedia.org/wiki/Javadoc).
 
-# <a name="preguntas"></a>Actividad 4 - Preguntas
+# <a name="preguntas"></a>Actividad 4 - Preguntas
 
 En el reporte de la práctica, además de mostrar y explicar el desarrollo de las actividades deberás responder a las siguientes preguntas:
 
