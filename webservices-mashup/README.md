@@ -32,7 +32,7 @@ Existen diversas formas de llamar servicios Web, una de ellas es utilizando llam
 - Para comenzar, **Iniciar** el servidor de **Play Framework** en la terminal, navegando a la carpeta donde se encuentra el proyecto de la práctica [**Play-WebService**](https://github.com/Innova4DLab/Play-WebService)  y escribir:
 
 ```Bash
-$ cd play-java-rest
+$ cd play-java
 $ activator run
 ```
 - Como en la práctica anterior, **Abrir** el **proyecto de Play** en el editor de su preferencia.
