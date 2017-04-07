@@ -37,7 +37,7 @@ $ activator run
 ```
 - Como en la práctica anterior, **Abrir** el **proyecto de Play** en el editor de su preferencia.
   - Como ya habiamos visto previamente, **Play Framework** utiliza estrictamente el patrón **Modelo-Vista-Controlador**, por lo que la parte de la vista, donde se desarrolla el despliegue de la interfaz, se lleva a cabo dentro de la carpeta **app/views**.
-  - Para nuestra aplicación, las llamadas a los **servicios Web** las implementaremos del lado del **cliente**, utilizando llamadas asíncronas, por lo que nuestras actividades se centraran bajo **HTML, CSS y JavaScript**.
+  - Para nuestra aplicación, las llamadas a los **servicios Web** las implementaremos del lado del **cliente**, utilizando llamadas asíncronas, por lo que nuestras actividades emplearán las tecnologías:  **HTML, CSS y JavaScript**.
 - **Copiar** el contenido del archivo en *este repositorio* **index.scala(1).html** archivo del proyecto de **Play** dentro de la ruta **app/views/index.scala.html**.  
 
 - **Modificar** el contenido del método "index()" que esta en controlador "Application.java" por la línea:
@@ -54,7 +54,7 @@ $ activator run
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 ```
 
-Nuestra aplicación se dive en 3 partes, **(1) JavaScript**, **(2) CSS**, **(3) HTML**.
+Nuestra aplicación se divide en 3 partes, **(1) JavaScript**, **(2) CSS**, **(3) HTML**.
 - En la sección de **Javascript** se definen métodos que escuchan eventos y ejecutan llamadas asíncronas para desplegar los resultados en el **DOM**. Estas funciones se implementan de manera simple gracias a **jQuery**.  
   - Analizar el código **JavaScript**.
   - Presta atención a la **documentación**.
