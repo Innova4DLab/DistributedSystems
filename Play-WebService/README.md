@@ -51,10 +51,10 @@ Instalar Play:
 ### Agregar activator a la variable de entorno:
 
 Abrir una línea de comandos como administrador.
-- 1.-Presionar la tecla windows.
-- 2.-Escribir "cmd"
-- 3.-Presionar click derecho sobre el icono de consola.
-- 4.-Seleccionar "Ejecutar como administrador".
+ 1. Presionar la tecla windows.
+ 2. Escribir "cmd"
+ 3. Presionar click derecho sobre el icono de consola.
+ 4. Seleccionar "Ejecutar como administrador".
 
 <img src="imagenes/cmd-console.png" width="75%" height="75%">
 
