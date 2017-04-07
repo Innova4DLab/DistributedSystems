@@ -9,7 +9,7 @@
   </style>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!-- Replace the value of the key parameter with your own API key. --> 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key="></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=<API_KEY>"></script>
 <script>
   /*
   * El siguiente código se ejecuta inmediatamente después
@@ -68,7 +68,7 @@
       */
       $.ajax({
         type: 'GET',
-        url: 'http://api.openweathermap.org/data/2.5/weather?q='+country+'&appid=<key>',
+        url: 'http://api.openweathermap.org/data/2.5/weather?q='+country+'&appid=<API_KEY>',
         data: { get_param: 'value' },
         dataType:'json',
         success: function (data) {
@@ -91,7 +91,7 @@
       /*
       * Llamar asíncronamente la API REST de Flickr.
       */
-      var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=8682e54c00e1ee915795f57158982fa4&tags="+country+"+city&sort=interestingness-desc";
+      var flickrURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=<API_KEY>&tags="+country+"+city&sort=interestingness-desc";
       var src;
       $("#images").empty();
       $.getJSON(flickrURL + "&format=json&jsoncallback=?", function(data){
