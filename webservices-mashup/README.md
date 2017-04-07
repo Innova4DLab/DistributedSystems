@@ -96,6 +96,24 @@ Vamos a generar una aplicación que utilice todos estos servicios. Nuestra aplic
   - (Si están en **Atom**, pueden dar click derecho y seleccionar New file, ó pueden duplicar el anterior **index.scala.html**),
 - **Copiar** el contenido del archivo **index.scala(2).html** que se encuentra **dentro de este repositorio** a **index.scala.html** del proyecto de Play.
 
+- **Obtener una clave** valida para consultar el API de **OpenWeather**
+  - Crear una cuenta de OpenWeather en https://home.openweathermap.org/users/sign_up
+  - Obtener la clave en https://home.openweathermap.org/api_keys
+
+- **Obtener una clave** valida para consultar el API de **Flickr**
+  - Crear una cuenta de Flickr en https://www.flickr.com/signup
+  - Crear una app no comercial en https://www.flickr.com/services/apps/create/noncommercial/
+  - Obtener la clave de aplicación en https://www.flickr.com/services/apps
+
+- **Obtener una clave** valida para consultar el API de **Google Maps**
+  - Crear una cuenta de Google en https://accounts.google.com/SignUp
+  - Crear una CLAVE presionando el botón "Crear credenciales" en https://console.developers.google.com/apis/credentials
+
+- **Agregar las 3 claves** generadas en el documento index.scala.html
+  - Abrir el documento index.scala.html
+  - Cambiar la cadena "<API_KEY>" por la clave generada de cada servicio Web
+
+
 En esta actividad vamos a **separar asuntos**, es decir, vamos a utilizar **CSS** para manejar únicamente el estilo, **HTML** para crear los elementos y **JavaScript** para implementar la lógica de la aplicación. Para hacer más claro el uso de *[Separation of concerns](http://en.wikipedia.org/wiki/Separation_of_concerns)* vamos a utilizar de la carpeta **public** de Play. La carpeta **public** es un directorio en donde el contenido es accesible por cualquiera que tenga acceso al servidor, es un lugar ideal para agregar imágenes que deseemos mostrar en la aplicación, código JavaScript y hojas de estilo CSS, ahora deberás:
 - **Copiar** el contenido de la hoja de estilo **main(2).css** que se encuentra en este repositorio y pegar el contenido dentro de **public/stylesheets/main.css**
 
