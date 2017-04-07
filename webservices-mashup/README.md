@@ -96,16 +96,16 @@ Vamos a generar una aplicación que utilice todos estos servicios. Nuestra aplic
   - (Si están en **Atom**, pueden dar click derecho y seleccionar New file, ó pueden duplicar el anterior **index.scala.html**),
 - **Copiar** el contenido del archivo **index.scala(2).html** que se encuentra **dentro de este repositorio** a **index.scala.html** del proyecto de Play.
 
-- **Obtener una clave** valida para consultar el API de **OpenWeather**
+- **Obtener una clave** válida para consultar el API de **OpenWeather**
   - Crear una cuenta de OpenWeather en https://home.openweathermap.org/users/sign_up
   - Obtener la clave en https://home.openweathermap.org/api_keys
 
-- **Obtener una clave** valida para consultar el API de **Flickr**
+- **Obtener una clave** válida para consultar el API de **Flickr**
   - Crear una cuenta de Flickr en https://www.flickr.com/signup
   - Crear una app no comercial en https://www.flickr.com/services/apps/create/noncommercial/
   - Obtener la clave de aplicación en https://www.flickr.com/services/apps
 
-- **Obtener una clave** valida para consultar el API de **Google Maps**
+- **Obtener una clave** válida para consultar el API de **Google Maps**
   - Crear una cuenta de Google en https://accounts.google.com/SignUp
   - Crear una CLAVE presionando el botón "Crear credenciales" en https://console.developers.google.com/apis/credentials
 
