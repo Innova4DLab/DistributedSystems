@@ -111,7 +111,7 @@ Vamos a generar una aplicación que utilice todos estos servicios. Nuestra aplic
 
 - **Agregar las 3 claves** generadas en el documento index.scala.html
   - Abrir el documento index.scala.html
-  - Cambiar la cadena "<API_KEY>" por la clave generada de cada servicio Web
+  - Cambiar la cadena "<API_KEY>" por la clave generada anteriormente de cada servicio Web (3)
 
 
 En esta actividad vamos a **separar asuntos**, es decir, vamos a utilizar **CSS** para manejar únicamente el estilo, **HTML** para crear los elementos y **JavaScript** para implementar la lógica de la aplicación. Para hacer más claro el uso de *[Separation of concerns](http://en.wikipedia.org/wiki/Separation_of_concerns)* vamos a utilizar de la carpeta **public** de Play. La carpeta **public** es un directorio en donde el contenido es accesible por cualquiera que tenga acceso al servidor, es un lugar ideal para agregar imágenes que deseemos mostrar en la aplicación, código JavaScript y hojas de estilo CSS, ahora deberás:
