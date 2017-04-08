@@ -105,7 +105,7 @@ En el documento **index.scala(1).html** de este repositorio se han implementado 
 
 Ahora que ya saben implementar un servicio Web y algunos conceptos básicos de **HTML y CSS** en la actividad 2 vamos a implementar un **Mashup**. Un **Mashup** es un conjunto de servicios, ya sean propios o de terceros que se unen para crear una aplicación completamente diferente, algunos servicios de terceros son ofrecidos por **Flickr, Wikipedia, WeatherReport, Google Maps**, etc.
 
--> <img src="MashupDiagram.png" width="50%" height="50%"> <-
+<img src="MashupDiagram.png" width="50%" height="50%">
 
 Vamos a generar una aplicación que utilice todos estos servicios. Nuestra aplicación será una **WebApp** que permitirá ofrecer información sobre un país a las personas de negocios. Para esto ofreceremos un pequeño parrafo introductorio con la información del país **(Wikipedia)**, un pequeño mapa con la ubicación de la embajada **(Google Maps)**, el clima en la capital del país **(OpenWeather)**, una serie de fotografías relacionadas al país **(Flickr)**. Para esta actividad vamos a desarrollar una nueva vista, para esto es deberás seguir las siguientes instrucciones:
 - **Cambiar** el nombre del archivo **index.scala.html** a **index.scala(act1).html**
