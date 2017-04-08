@@ -14,7 +14,7 @@
 
 # Antes de comenzar
 
-### <a name="conceptosbasicos"></a>Conceptos Basicos:
+### <a name="conceptosbasicos"></a>Conceptos Básicos:
 - A continuación se presentan enlaces a la documentación así como definiciones de algunos conceptos presentes en esta práctica:  
   - DOM (Modelo de Objeto de Documento) es una representación completamente orientada a objetos de una página web y permite acceder y actualizar el contenido, estructura y estilo de los documentos HTML con un lenguaje lenguaje tal como Javascript.
   
