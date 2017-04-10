@@ -25,8 +25,14 @@ La actividad se encuentra **en este repositorio** por lo que deberás **clonar**
 
 - **Clonar** el proyecto mediante:
 ```Bash
-$ git clone https://github.com/Innova4DLab/websocket-play.git
+$ git clone https://github.com/Innova4DLab/DistributedSystems.git
 ```
+
+- **Acceder** a la práctica mediante:
+```Bash
+$ cd websocket-play
+```
+
 - **Ejecutar** el proyecto con:
 ```Bash
 $ activator run
