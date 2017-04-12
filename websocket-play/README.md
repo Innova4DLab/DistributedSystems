@@ -160,7 +160,7 @@ window.setInterval(function(){
 - **Desarrollar** la interfaz de usuario de la aplicación (Con CSS y Html)
   - La aplicación final debería verse más o menos así:
 
-<img src="antesDesp.png"/ width="75%" height="75%">
+<img src="antesDesp.png" width="75%" height="75%">
 
 - **Explicar** ampliamente en el reporte los pasos que seguiste para el desarrollo de la aplicación.
 
