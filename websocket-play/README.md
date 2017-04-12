@@ -164,7 +164,7 @@ window.setInterval(function(){
 
 - **Explicar** ampliamente en el reporte los pasos que seguiste para el desarrollo de la aplicación.
 
-# <a name="limpieza"></a> Actividad 4 - Limpieza
+# <a name="limpieza"></a> Actividad 3 - Limpieza
 En el desarrollo de aplicaciones Web es importante mantener un estilo al programar, por esto deberás:
 - **Nombrar** adecuadamente las variables y métodos.
 - **Agregar** un comentario antes de un método para indicar su funcionamiento.
@@ -174,7 +174,7 @@ En el desarrollo de aplicaciones Web es importante mantener un estilo al program
 
 Recordando que el estilo debe ser siguiendo las guías de [Google](https://google.github.io/styleguide/jsguide.html) para **JavaScript**.
 
-# <a name="preguntas"></a>Actividad 5 - Preguntas
+# <a name="preguntas"></a>Actividad 4 - Preguntas
 
 Responder ampliamente a las siguientes preguntas en el reporte, tomando en cuenta todas las actividades realizadas en esta práctica.
   - ¿Qué es **WebSocket**?
