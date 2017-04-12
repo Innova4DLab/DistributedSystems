@@ -172,7 +172,7 @@ En el desarrollo de aplicaciones Web es importante mantener un estilo al program
 - **Realizar** un identado adecuado del código.
 - **Revisar** el código para detectar usos inadecuados de variables ó errores al escribir.
 
-Recordando que el estilo debe ser siguiendo las guías de [Google](https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml) para **JavaScript**.
+Recordando que el estilo debe ser siguiendo las guías de [Google](https://google.github.io/styleguide/jsguide.html) para **JavaScript**.
 
 # <a name="preguntas"></a>Actividad 5 - Preguntas
 
