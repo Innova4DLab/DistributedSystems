@@ -176,7 +176,7 @@ Recordando que el estilo debe ser siguiendo las guías de [Google](https://googl
 
 # <a name="preguntas"></a>Actividad 5 - Preguntas
 
-Responder ampliamente a las siguientes preguntas en el reporte, tomando en cuenta todas las actividades realizadas en este repositorio.
+Responder ampliamente a las siguientes preguntas en el reporte, tomando en cuenta todas las actividades realizadas en esta práctica.
   - ¿Qué es **WebSocket**?
   - ¿Cuál es la diferencia entre **WebSocket** y **Servicios REST**?
   - ¿Cómo se establece una conexión con **WebSocket**?
