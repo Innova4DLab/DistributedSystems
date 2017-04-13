@@ -190,7 +190,7 @@ El **Chat Anónimo** ahora está completo, lo puedes usar desde diferentes naveg
 
 ### Agregar un Timestamp
 
-Por último agregaremos un timestamp, del momento en el que el servidor recibe el mensaje, para esto deberemos modificar nuestro **UserActor.scala** par que cuando se genere el objeto JSON agregue un campo con un timestamp.
+Por último agregaremos un timestamp, del momento en el que el servidor recibe el mensaje, para esto deberemos modificar nuestro **UserActor.scala** para que cuando se genere el objeto JSON agregue un campo con un timestamp.
 
 Por lo que deberás:
 - **Importar** las librerías:
