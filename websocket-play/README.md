@@ -47,9 +47,9 @@ $ activator run
 
 <img src="httpsocket.png"/>
 
-Los **WebSockets** utilizan un único canal de comunicación bidireaccinal en donde se asegura una alta velocidad de intercambio de datos en demanda.
+Los **WebSockets** utilizan un único canal de comunicación bidireccinal en donde se asegura una alta velocidad de intercambio de datos en demanda.
 
-### Estructura de la Aplicación
+### Estructura de la Aplicación
 
 La **aplicación** se encuentra desarrollada en Scala y JavaScript. A continuación se muestra un diagrama con la estructura del proyecto:
 
