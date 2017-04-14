@@ -132,9 +132,9 @@ Listo, ahora deberías poder comunicarte con el **WebSocket**, pruébalo ahora e
 <img src="reactions.png"/>
 Por el momento el **Chat Anónimo** lo puedes usar al mismo tiempo desde diferentes navegadores ó pestañas para experimentar como el WebSocket atiende las peticiones de todos los clientes.
 
-### Envíar datos
+### Enviar datos
 
-Ahora te toca a tí, dado lo que has aprendido con WebSockets, deberás simular a otra persona enviándo mensajes:
+Ahora te toca a tí, dado lo que has aprendido con WebSockets, deberás simular a otra persona enviando mensajes:
 
 - **Desarrollar** una función JavaScript, que permita enviar mensajes a través del WebSocket al servidor cada 5 segundos, puedes extraer los mensajes de este arreglo:
 
