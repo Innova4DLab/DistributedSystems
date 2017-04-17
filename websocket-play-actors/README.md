@@ -16,7 +16,6 @@
 - **[Actividad 3 - Preguntas](#preguntas)**
 
 # Antes de comenzar
-
 ### <a name="herramientas"></a>Herramientas sugeridas:
 - **Eclipse**, **IntelliJ** u otro editor como <a href="https://atom.io/">(Atom)</a>.
 - Si utilizan Mac es recomendable usar <a href="http://brew.sh/">**Homebrew**</a>.
@@ -56,7 +55,6 @@ El modelo de actores en nuestra aplicación permite la concurrencia de mensajes,
 <img src="funactors.png" width="75%" height="75%"/>
 
 # <a name="desarrollo"></a>Actividad 1 - Desarrollo Server-WebSocket
-
 El objetivo de la actividad es desarrollar los métodos necesarios para implementar un sistema de actores en el servidor. Deberás **analizar** y **complementar** el código de las clases que aquí se presentan dentro del proyecto incluído en este repositorio. A continuación vamos a desarrollar el código en el controlador que está definido en **controllers/Application.scala**:
 
 ### Application.scala
@@ -108,6 +106,17 @@ def ws = WebSocket.tryAcceptWithActor[JsValue, JsValue] { implicit request =>
   })
 }
 ```
+
+[JSValue]()
+- Antes de comenzar el análisis del código Scala se presentan definiciones de algunos conceptos presentes en esta práctica:
+  - [ActorRef](http://doc.akka.io/docs/akka/current/general/addressing.html): Es una referencia de un actor akka que tiene como finalidad apoyar el envío de mensajes al actor que representa.
+  - [Apply()](https://twitter.github.io/scala_school/basics2.html#apply): Es una función especial que permite invocar directamente al objeto que la contiene.
+  - [Set](http://docs.scala-lang.org/overviews/collections/sets.html): Es una colección de datos del mismo tipo que no contiene elementos duplicados. 
+  - [Map](https://emilvarga.com/posts/2016/04/10/map-and-flatmap): Es un iterador que permite evaluar una función a cada elemento de una colección y retorna una colección con los elementos evaluados.
+  - [Lazy val](https://blog.codecentric.de/en/2016/02/lazy-vals-scala-look-hood/): Es un valor que es evaluado hasta que es accedido por primera vez y no puede cambiar su valor.
+  - [JSValue](https://www.playframework.com/documentation/2.5.x/ScalaJson): Es un trato que representa tipo de datos JSON y contiene utilidades que permiten el acceso y validación de estas estructuras.
+  - [Case class](https://twitter.github.io/scala_school/basics2.html#caseclass): Es un especial tipo de clase al cual el compilador automáticamente agrega útiles métodos a esta y es empleada para pattern matching y definición de datos. 
+  - [Pattern Matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html): Scala tiene un mecanismo que permite cualquier tipo de dato con varios patrones (parecido a un switch case), cada patron apunta a una expresión. La expresion que esta asociada con el primer patron coincidente será ejecutada.
 
 ### UserActor.scala
 Esta clase define un actor. **UserActor** funciona como una puerta de enlace entre los actores conectados al Chat y al websocket. Este actor envía mensajes a **BoardActor.scala** y al **WebSocket**.
