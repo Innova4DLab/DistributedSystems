@@ -111,7 +111,7 @@ def ws = WebSocket.tryAcceptWithActor[JsValue, JsValue] { implicit request =>
   - [ActorRef](http://doc.akka.io/docs/akka/current/general/addressing.html): Es una referencia de un actor akka que tiene como finalidad apoyar el envío de mensajes al actor que representa.
   - [Apply()](https://twitter.github.io/scala_school/basics2.html#apply): Es una función especial que permite invocar directamente al objeto que la contiene.
   - [Set](http://docs.scala-lang.org/overviews/collections/sets.html): Es una colección de datos del mismo tipo que no contiene elementos duplicados. 
-  - [Map](https://emilvarga.com/posts/2016/04/10/map-and-flatmap): Es un iterador que permite evaluar una función a cada elemento de una colección y retorna una colección con los elementos evaluados.
+  - [Map](https://emilvarga.com/posts/2016/04/10/map-and-flatmap): Es un iterador que permite evaluar una función a cada elemento de una colección y retorna una colección con el resultado de la evaluación de cada elemento.
   - [Lazy val](https://blog.codecentric.de/en/2016/02/lazy-vals-scala-look-hood/): Es un valor que es evaluado hasta que es accedido por primera vez y no puede cambiar su valor.
   - [JSValue](https://www.playframework.com/documentation/2.5.x/ScalaJson): Es un trato que representa tipo de datos JSON y contiene utilidades que permiten el acceso y validación de estas estructuras.
   - [Case class](https://twitter.github.io/scala_school/basics2.html#caseclass): Es un especial tipo de clase al cual el compilador automáticamente agrega útiles métodos a esta y es empleada para pattern matching y definición de datos. 
