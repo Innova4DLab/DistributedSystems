@@ -10,10 +10,10 @@
 - **[Antes de comenzar](#antesde)**
 - [Herramientas sugeridas](#herramientas)
 - [Instalación](#instalacion)
-- **[Actividad 1 - Introducción](#analisis)**
-- **[Actividad 2 - Desarrollo](#desarrollo)**
-- **[Actividad 3 - Limpieza](#limpieza)**
-- **[Actividad 4 - Preguntas](#preguntas)**
+- **[Introducción](#analisis)**
+- **[Actividad 1 - Desarrollo](#desarrollo)**
+- **[Actividad 2 - Limpieza](#limpieza)**
+- **[Actividad 3 - Preguntas](#preguntas)**
 
 # Antes de comenzar
 
@@ -235,7 +235,7 @@ return $("#board tbody").append("<tr><td class='user'>Usuario#"+ message.uid +" 
 
 <img src="end.png" width="75%" height="75%"/>
 
-# <a name="limpieza"></a> Actividad 3 - Limpieza
+# <a name="limpieza"></a> Actividad 2 - Limpieza
 
 La limpieza en este proyecto consiste en documentar el código en Scala, para esto deberás seguir las guías de ScalaDocs. puedes basarte en las descripciones presentadas en esta práctica.
 
@@ -247,7 +247,7 @@ La limpieza en este proyecto consiste en documentar el código en Scala, para es
 
 Recordando que el estilo de documentación debe ser siguiendo las guías de [ScalaDocs](http://docs.scala-lang.org/style/scaladoc.html).
 
-# <a name="preguntas"></a>Actividad 4 - Preguntas
+# <a name="preguntas"></a>Actividad 3 - Preguntas
 
 Responder ampliamente a las siguientes preguntas en el reporte, tomando en cuenta todas las actividades realizadas en este repositorio.
 
