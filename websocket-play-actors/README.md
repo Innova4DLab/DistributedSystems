@@ -107,7 +107,6 @@ def ws = WebSocket.tryAcceptWithActor[JsValue, JsValue] { implicit request =>
 }
 ```
 
-[JSValue]()
 - Antes de comenzar el análisis del código Scala se presentan definiciones de algunos conceptos presentes en esta práctica:
   - [ActorRef](http://doc.akka.io/docs/akka/current/general/addressing.html): Es una referencia de un actor akka que tiene como finalidad apoyar el envío de mensajes al actor que representa.
   - [Apply()](https://twitter.github.io/scala_school/basics2.html#apply): Es una función especial que permite invocar directamente al objeto que la contiene.
