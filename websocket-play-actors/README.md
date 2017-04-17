@@ -112,10 +112,10 @@ def ws = WebSocket.tryAcceptWithActor[JsValue, JsValue] { implicit request =>
   - [Apply()](https://twitter.github.io/scala_school/basics2.html#apply): Es una función especial que permite invocar directamente al objeto que la contiene.
   - [Set](http://docs.scala-lang.org/overviews/collections/sets.html): Es una colección de datos del mismo tipo que no contiene elementos duplicados. 
   - [Map](https://emilvarga.com/posts/2016/04/10/map-and-flatmap): Es un iterador que permite evaluar una función a cada elemento de una colección y retorna una colección con el resultado de la evaluación de cada elemento.
-  - [Lazy val](https://blog.codecentric.de/en/2016/02/lazy-vals-scala-look-hood/): Es un valor que es evaluado hasta que es accedido por primera vez y no puede cambiar su valor.
+  - [Lazy val](https://blog.codecentric.de/en/2016/02/lazy-vals-scala-look-hood/): Es un valor que es evaluado hasta que es accedido por primera vez, este es evaluado una sola vez.
   - [JSValue](https://www.playframework.com/documentation/2.5.x/ScalaJson): Es un trato que representa tipo de datos JSON y contiene utilidades que permiten el acceso y validación de estas estructuras.
   - [Case class](https://twitter.github.io/scala_school/basics2.html#caseclass): Es un especial tipo de clase al cual el compilador automáticamente agrega útiles métodos a esta y es empleada para pattern matching y definición de datos. 
-  - [Pattern Matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html): Scala tiene un mecanismo que permite cualquier tipo de dato con varios patrones (parecido a un switch case), cada patron apunta a una expresión. La expresion que esta asociada con el primer patron coincidente será ejecutada.
+  - [Pattern Matching](http://docs.scala-lang.org/tutorials/tour/pattern-matching.html): Scala tiene un mecanismo que permite hacer coincidir cualquier tipo de dato con varios patrones (parecido a un switch case), cada patron apunta a una expresión. La expresion que esta asociada con el primer patron coincidente será ejecutada.
 
 ### UserActor.scala
 Esta clase define un actor. **UserActor** funciona como una puerta de enlace entre los actores conectados al Chat y al websocket. Este actor envía mensajes a **BoardActor.scala** y al **WebSocket**.
