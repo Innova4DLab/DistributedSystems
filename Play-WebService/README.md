@@ -41,7 +41,7 @@ $ brew install typesafe-activator
 
 Windows:
 - Descargar el instalador de typesafe-activator: https://downloads.typesafe.com/typesafe-activator/1.3.12/typesafe-activator-1.3.12.zip
-- Descomprimir el el archivo que contiene una carpeta (activator-dist-1.3.12) y moverla a "C:/".
+- Descomprimir el archivo que contiene una carpeta (activator-dist-1.3.12) y moverla a "C:/".
 
 Instalar Play:
 - Descargar el instalador de Play <a href="https://www.playframework.com/">aquí</a>.
