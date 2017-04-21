@@ -58,7 +58,7 @@ Abrir una línea de comandos como administrador.
 
 <img src="imagenes/cmd-console.png" width="75%" height="75%">
 
-Ejecutar el siguiente comando (con la ruta de Typesafe):
+Ejecutar el siguiente comando (con la ruta de Typesafe-Activator):
 - setx PATH "%PATH%;C:/activator-dist-1.3.12/bin"
 
 # <a name="analisis"></a>Actividad 1 - Tutorial de Servicios Web
