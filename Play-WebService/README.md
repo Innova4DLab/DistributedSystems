@@ -112,7 +112,7 @@ $ activator run
 
 - Para continuar es importante identificar las carpetas del proyecto **"App -> Controllers"** y **"conf"**, ambas carpetas aparecen en root del proyecto.
 - Dentro de **"conf"** existe un archivo llamado **routes**, dada la arquitectura de Play, analiza su contenido y explícalo en tu reporte.
-- Dentro de **"App -> Controllers"** existe una clase llamada **Application**, la cual es una clase en donde podemos  definir la lógica **HTTP** de la aplicación, aquí es donde se van a definir los **Servicios Web**.
+- Dentro de **"App -> Controllers"** existe una clase llamada **HomeController**, la cual es una clase en donde podemos  definir la lógica **HTTP** de la aplicación, aquí es donde se van a definir los **Servicios Web**.
 - Dentro de éste archivo edita la siguiente línea:
 
 ```Java
@@ -120,12 +120,12 @@ $ activator run
 * El siguiente método solamente despliega
 * un mensaje dentro del template index.
 */
-public static Result index() {
-  return ok(index.render("Hola mundo, servicios web!!"));
+public Result index() {
+        return ok(index.render("Your new application is ready."));
 }
 ```
 - Guarda el archivo y actualiza **localhost:9000** en el navegador.
-- Ahora procedemos a realizar nuestro **servicio Web**, dentro de la clase **Application** necesitamos importar algunas librerías:
+- Ahora procedemos a realizar nuestro **servicio Web**, dentro de la clase **HomeController** necesitamos importar algunas librerías:
 
 ```Java
 import play.libs.Json;
@@ -134,7 +134,7 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import play.api.libs.json.*;
 ```
 
-- Agregamos un método dentro de la clase **Application**:
+- Agregamos un método dentro de la clase **HomeController**:
 
 ```Java
 /*
@@ -153,7 +153,7 @@ public static Result getMultiplicacion(int a, int b){
 - Ahora ya tenemos la lógica de nuestro servicio **multiplicación**, pero para ponerlo en funcionamiento debemos ir a **routes** y agregar el método.
 - **# Mis Servicios Web** es una línea de comentario para indicar el bloque donde inician las declaraciones de los servicios Web.
 - El método multiplicación es de tipo **GET** por lo que definimos una ruta con nombre **/multiplicación** y  dos variables, **:a** y **:b**
-- Por último, le indicamos la ubicación del método: **controllers.Application.getMultiplicación** pasamos las variables al método mediante **(a:Int, b:Int)**. El código se ve así:
+- Por último, le indicamos la ubicación del método: **controllers.HomeController.getMultiplicación** pasamos las variables al método mediante **(a:Int, b:Int)**. El código se ve así:
 
 ```Bash
 # Routes
@@ -161,14 +161,14 @@ public static Result getMultiplicacion(int a, int b){
 # ~~~~
 
 # Home page
-GET     /                        controllers.Application.index()
+GET     /                        controllers.HomeController.index
 
 # Mis Servicios Web
 
-GET     /multiplicacion/:a/:b    controllers.Application.getMultiplicacion(a: Int,b: Int)
+GET     /multiplicacion/:a/:b    controllers.HomeController.getMultiplicacion(a: Int,b: Int)
 
 # Map static resources from the /public folder to the /assets URL path
-GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 ```
 
