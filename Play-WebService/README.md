@@ -143,7 +143,7 @@ import play.api.libs.json.*;
 * @param b el segundo entero.
 * @return Resultado en formato Json.
 */
-public static Result getMultiplicacion(int a, int b){
+public Result getMultiplicacion(int a, int b){
   ObjectNode result = Json.newObject();
   result.put("resultado", a*b );
   return ok(result);
@@ -185,7 +185,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 * @param word la palabra a validar.
 * @return true o false en formato Json.
 */
-public static Result getPalindromo(String word){
+public Result getPalindromo(String word){
   ObjectNode result = Json.newObject();
   String myWord = word.replaceAll("\\s+","");
   String reverse = new StringBuffer(myWord).reverse().toString();
