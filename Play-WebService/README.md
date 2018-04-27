@@ -29,7 +29,7 @@ Alternativas interesantes a Play:
 
  1. Descargar plantilla Play (Java):
 https://example.lightbend.com/v1/download/play-java-starter-example
- 2. Descomprimir el archivo descargado (play-java-starter-example.zip
+ 2. Descomprimir el archivo descargado (play-java-starter-example.zip)
 
 # <a name="analisis"></a>Actividad 1 - Tutorial de Servicios Web
 
@@ -53,7 +53,7 @@ Esta es la estructura básica de una aplicación de PLAY:
 Ahora ejecutaremos la aplicación mediante **sbt** + **run** (Si es la primera vez, es posible que se descarguen algunas dependencias). Por default la aplicación levanta el servicio en el **puerto 9000**:
 
 ```Bash
-$ sbt run
+$ ./sbt run
 ```
 
 - **Abrir** cualquier navegador y **escribir** en la barra de direcciones **"localhost:9000"**
