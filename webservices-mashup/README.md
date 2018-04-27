@@ -36,7 +36,7 @@
 
 ### <a name="instalacion"></a>Instalación:
 
-Para esta actividad se trabajará con la aplicación desarrollada previamente en Play, en la práctica [**Play-WebService**](https://github.com/Innova4DLab/Play-WebService)
+Para esta actividad se trabajará con la aplicación desarrollada previamente en Play, en la práctica [**Play-WebService**](https://github.com/Innova4DLab/DistributedSystems/tree/master/Play-WebService)
 
 # <a name="analisis"></a>Actividad 1 - Llamando Servicios Web
 
