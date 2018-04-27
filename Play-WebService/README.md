@@ -25,59 +25,13 @@ Alternativas interesantes a Play:
 - Conocimientos de Programación Orientada a Objetos.
 - Se recomienda instalar <a href="http://www.scala-sbt.org/">SBT</a>.
 
-### <a name="instalacion"></a>Instalación de 'activator':
+### Descargar plantilla de Play ###
 
-**Activator** es una herramienta de construcción de software que incluye manejo de dependencias, herramientas de compilación, pruebas, implementación e integración. Activator está diseñado para proyectos de **Scala** y **Java**. Activator es de código abierto y fue desarrollado por Lightbend (antes llamada Typesafe) y es la herramienta de construcción por default para PLAY.
-
-Linux Ubuntu:  
-```Bash
-$ apt-get install typesafe-activator
-```
-
-Mac OSX:
-```Bash
-$ brew install typesafe-activator
-```
-
-Windows:
-- Descargar el instalador de typesafe-activator: https://downloads.typesafe.com/typesafe-activator/1.3.12/typesafe-activator-1.3.12.zip
-- Descomprimir el archivo que contiene una carpeta (activator-dist-1.3.12) y moverla a "C:/".
-
-Instalar Play:
-- Descargar el instalador de Play <a href="https://www.playframework.com/">aquí</a>.
-- Ejecutar el archivo **.bat**
-- Agregar activator a la variable **Path**.
-
-### Agregar activator a la variable de entorno:
-
-Abrir una línea de comandos como administrador.
- 1. Presionar la tecla windows.
- 2. Escribir "cmd"
- 3. Presionar click derecho sobre el icono de consola.
- 4. Seleccionar "Ejecutar como administrador".
-
-<img src="imagenes/cmd-console.png" width="75%" height="75%">
-
-Ejecutar el siguiente comando (con la ruta de Typesafe-Activator):
-- setx PATH "%PATH%;C:/activator-dist-1.3.12/bin"
+ 1. Descargar plantilla Play (Java):
+https://example.lightbend.com/v1/download/play-java-starter-example
+ 2. Descomprimir el archivo descargado (play-java-starter-example.zip
 
 # <a name="analisis"></a>Actividad 1 - Tutorial de Servicios Web
-
-La instalación ya nos permite ejecutar el comando **activator** en la consola:
-
-- Para crear un nuevo proyecto basta con ejecutar en la consola el comando **activator** + **new**:
-
-```Bash
-$ activator new
-```
-Se ejecuta un script que nos preguntará las siguientes opciones:
-- De la lista que aparece **seleccionar** la opción **(5) Java-Play**.
-- **Escoger** un nombre para nuestra aplicación, ejemplo: "**play-java-webservices**"
-- **Cambiar** al directorio donde se creó el **template**.
-
-```Bash
-$ cd play-java-webservices
-```
 
 Si observas en el explorador deberías de ver la siguiente estructura:
 
@@ -96,10 +50,10 @@ Esta es la estructura básica de una aplicación de PLAY:
  - En la carpeta **test** se escriben las pruebas unitarias
  
 
-Ahora ejecutaremos la aplicación mediante **activator** + **run** (Si es la primera vez, es posible que se descarguen algunas dependencias). Por default la aplicación levanta el servicio en el **puerto 9000**:
+Ahora ejecutaremos la aplicación mediante **sbt** + **run** (Si es la primera vez, es posible que se descarguen algunas dependencias). Por default la aplicación levanta el servicio en el **puerto 9000**:
 
 ```Bash
-$ activator run
+$ sbt run
 ```
 
 - **Abrir** cualquier navegador y **escribir** en la barra de direcciones **"localhost:9000"**
