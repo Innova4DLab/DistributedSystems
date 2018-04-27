@@ -180,4 +180,4 @@ En el reporte de la práctica, además de mostrar y explicar el desarrollo de la
 
 **Notas:** Explica ampliamente y justifica tus respuestas.
 
-**Cualquier comentario o duda, discutir en la sección de [issues](https://github.com/Innova4DLab/Dining-Philosophers/issues).**
+**Cualquier comentario o duda, discutir en la sección de [issues](https://github.com/Innova4DLab/DistributedSystems/issues).**
