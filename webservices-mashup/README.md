@@ -40,22 +40,22 @@ Para esta actividad se trabajará con la aplicación desarrollada previamente en
 
 # <a name="analisis"></a>Actividad 1 - Llamando Servicios Web
 
-El objetivo de la práctica es implementar los servicios Web previamente desarrollados en la práctica [**Play-WebService**](https://github.com/Innova4DLab/Play-WebService) en una vista implementada en **Play**, utilizando **JavaScript**.
+El objetivo de la práctica es implementar los servicios Web previamente desarrollados en la práctica [**Play-WebService**](https://github.com/Innova4DLab/DistributedSystems/tree/master/Play-WebService) en una vista implementada en **Play**, utilizando **JavaScript**.
 
 Existen diversas formas de llamar servicios Web, una de ellas es utilizando llamadas asíncronas al servidor utilizando **Ajax** *(Asynchronous Javascript and XML)*, éstas llamadas son muy fáciles de implementar utilizando la librería **jQuery**.
 
-- Para comenzar, **Iniciar** el servidor de **Play Framework** en la terminal, navegando a la carpeta donde se encuentra el proyecto de la práctica [**Play-WebService**](https://github.com/Innova4DLab/Play-WebService)  y escribir:
+- Para comenzar, **Iniciar** el servidor de **Play Framework** en la terminal, navegando a la carpeta donde se encuentra el proyecto de la práctica [**Play-WebService**](https://github.com/Innova4DLab/DistributedSystems/tree/master/Play-WebService)  y escribir:
 
 ```Bash
-$ cd play-java
-$ activator run
+$ cd play-java-starter-example
+$ ./sbt run
 ```
 - Como en la práctica anterior, **Abrir** el **proyecto de Play** en el editor de su preferencia.
   - Como ya habiamos visto previamente, **Play Framework** utiliza estrictamente el patrón **Modelo-Vista-Controlador**, por lo que la parte de la vista, donde se desarrolla el despliegue de la interfaz, se lleva a cabo dentro de la carpeta **app/views**.
   - Para nuestra aplicación, las llamadas a los **servicios Web** las implementaremos del lado del **cliente**, utilizando llamadas asíncronas, por lo que nuestras actividades emplearán las tecnologías:  **HTML, CSS y JavaScript**.
 - **Copiar** el contenido del archivo en *este repositorio* **index.scala(1).html** archivo del proyecto de **Play** dentro de la ruta **app/views/index.scala.html**.  
 
-- **Modificar** el contenido del método "index()" que esta en controlador "Application.java" por la línea:
+- **Modificar** el contenido del método "index()" que esta en controlador "HomeController.java" por la línea:
 
 	  return ok(index.render("Servicios Web"));
     
@@ -91,7 +91,7 @@ Nuestra aplicación se divide en 3 partes, **(1) JavaScript**, **(2) CSS**, **(3
 
 ### Actividad:
 
-En el documento **index.scala(1).html** de este repositorio se han implementado dos de los **servicios Web** previamente elaborados en la práctica [**Play-WebService**](https://github.com/Innova4DLab/Play-WebService),   (**Multiplicación y Palíndromo**), a partir de ésto deberás:
+En el documento **index.scala(1).html** de este repositorio se han implementado dos de los **servicios Web** previamente elaborados en la práctica [**Play-WebService**](https://github.com/Innova4DLab/DistributedSystems/tree/master/Play-WebService),   (**Multiplicación y Palíndromo**), a partir de ésto deberás:
   - **Desarrollar** en JavaScript las llamadas asíncronas a los servicios faltantes:
       - **Convertir** Pesos a Dólares.
       - **Convertir** grados Centigrados a Farenheit.
@@ -194,4 +194,4 @@ Responder ampliamente a las siguientes preguntas en el reporte, tomando en cuent
 
 **Notas:** Explica ampliamente y justifica tus respuestas.
 
-**Cualquier comentario o duda, discutir en la sección de [issues](https://github.com/Innova4DLab/webservices-mashup/issues).**
+**Cualquier comentario o duda, discutir en la sección de [issues](https://github.com/Innova4DLab/DistributedSystems/issues).**
